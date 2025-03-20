@@ -74,7 +74,7 @@ p {
 }
 
 .container {
-  @apply p-4 sm:p-5 md:p-6 !max-w-[1100px];
+  @apply p-4 sm:p-5 md:p-6 !max-w-[1300px];
 }
 
 .container--medium {
