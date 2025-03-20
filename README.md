@@ -1,4 +1,4 @@
-# Slot Picks
+# Giselle Monbiot
 
 ### Technologies used:
 
