@@ -11,23 +11,26 @@ eleventyComputed:
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
-{% import "./_includes/components/sitesList.html" as sitesList with context %}
 {% import "./_includes/components/seoIntroText.html" as seoIntroText with context %}
+{% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
 
 <div>
 
-  {{ navBar.nav(bgColour='bg-white') }}
+  <section class="min-h-dvh flex flex-col border-b-4 border-b-[color:var(--primary-colour)] border-solid background-image-class">
+    
+    <div>
+      {{ navBar.nav(bgColour='bg-white') }}
+    </div>
+  
+    <div class="container content-center grow">
+      {% include "./_includes/components/hero.html" %}
+    </div>
+  
+    {{ moreButton.button() }}
+  </section>  
 
-  <section class="dark-copy">
+  <section class="dark-copy" data-test="moreButtonLocation">
     {{ seoIntroText.seoIntroTextComponent() }}
-  </section>
-
-  <section class="dark-copy container" data-test="moreButtonLocation">
-    {{ sitesList.listOfSites(title="Slots", siteType='slots') }}
-  </section>
-
-  <section class="dark-copy container" data-test="moreButtonLocation">
-    {{ sitesList.listOfSites(title="Casinos", siteType='casinos') }}
   </section>
 
   <section class="dark-copy container flex flex-col justify-center mx-auto">

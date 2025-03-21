@@ -75,11 +75,15 @@ module.exports = function (eleventyConfig) {
     "./src/admin/imageComponent.js": "./admin/imageComponent.js",
     "./src/admin/buttonComponent.js": "./admin/buttonComponent.js",
     "./src/admin/videoComponent.js": "./admin/videoComponent.js",
+    "./src/admin/audioComponent.js": "./admin/audioComponent.js",
     "./src/site.webmanifest": "./site.webmanifest"
   });
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/_includes/static/img");
+
+  // Copy Audio Folder to /_site
+  eleventyConfig.addPassthroughCopy("./src/_includes/static/audio");
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
