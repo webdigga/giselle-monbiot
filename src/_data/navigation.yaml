@@ -1,6 +1,4 @@
 firstLevelItems:
-  - text: Home
-    url: /
   - text: About
     url: /about/
   - text: 1-2-1 Therapy
