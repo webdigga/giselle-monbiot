@@ -13,6 +13,7 @@ eleventyComputed:
 {% import "./_includes/partials/navbar.html" as navBar with context %}
 {% import "./_includes/components/seoIntroText.html" as seoIntroText with context %}
 {% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
+{% import "./_includes/components/about.html" as about with context %}
 
 <div>
 
@@ -31,6 +32,10 @@ eleventyComputed:
 
   <section class="dark-copy" data-test="moreButtonLocation">
     {{ seoIntroText.seoIntroTextComponent() }}
+  </section>
+
+  <section class="bg-[color:var(--primary-colour)] text-[color:var(--white)]">
+    {{ about.aboutComponent() }}
   </section>
 
   <section class="dark-copy container flex flex-col justify-center mx-auto">
@@ -56,7 +61,7 @@ eleventyComputed:
               />
               <div class="flex flex-grow">
                 <div class="triangle"></div>
-                <div class="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 text">
+                <div class="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 w-full">
                   <div>
                     <span class="inline-block mb-4 text-xs font-bold capitalize border-b-2 border-[color:var(--primary-colour)] hover:text-[color:var(--primary-colour)]">News</span>
                     <span class="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-[color:var(--primary-colour)]">{{ newsItem.data.title }}</span>
