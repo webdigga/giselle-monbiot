@@ -1,31 +1,25 @@
 firstLevelItems:
+  - text: Start Your Journey
+    url: /start-your-journey/
+    secondLevelItems:
+      - text: 1-2-1 Therapy
+        url: /1-2-1-therapy/
+      - text: Book a session
+        url: /book-a-session/`
+      - text: FAQs
+        url: /frequently-asked-questions-faqs/
+  - text: Discover
+    url: /discover/
+    secondLevelItems:
+      - text: Courses and Events
+        url: /courses-and-events/
+      - text: Breathwork and Meditation
+        url: /breathwork-and-meditation/
+      - text: Retreats
+        url: /retreats/
   - text: About
     url: /about/
-  - text: 1-2-1 Therapy
-    url: /1-2-1-therapy/
-  - text: Breathwork
-    url: /breathwork/
-  - text: Meditation
-    url: /meditation/
-  - text: Courses and Events
-    url: /courses-and-events/
-    secondLevelItems:
-      - text: Release And Renew One Day Retreat
-        url: /release-and-renew-one-day-retreat/
-      - text: Conscious Connected Breathwork
-        url: /conscious-connected-breathwork/
-      - text: De-stress, Unwind And Feel More Vibrant Breathwork
-        url: /de-stress-unwind-and-feel-more-vibrant-breathwork/
-      - text: Core Connections
-        url: /core-connections/
-      - text: Manage Your Menopause Online Course
-        url: /manage-your-menopause-online-course/
-      - text: Presentations
-        url: /presentations/
   - text: News
     url: /news/
-  - text: FAQs
-    url: /frequently-asked-questions-faqs/
   - text: Contact
     url: /contact/
-

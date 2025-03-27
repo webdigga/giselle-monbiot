@@ -1,0 +1,30 @@
+{% macro retreatsComponent() %}
+
+  {% import "./buttons/anchor.html" as anchorButton with context %}
+
+  <div class="container container--large"> 
+
+    <div class="w-full mx-auto">
+      <div class="w-full justify-start items-center gap-8 grid lg:grid-cols-3 grid-cols-1 justify-items-end">
+        
+        <div class="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex lg:col-span-2 col-span-1">
+          <div class="w-full flex-col justify-start lg:items-start items-center gap-4 flex">
+            <h2 class="lg:text-start text-center">Retreats</h2>
+            <p class="lg:text-start text-center">Step away from the noise of daily life and immerse yourself in a space of rest, renewal, and self-discovery. Our retreats offer a blend of breathwork, meditation, and mindful practices to help you reconnect, recharge, and transform.</p>
+          </div>
+          
+          {{ anchorButton.anchor(type='tertiary', anchorText='Find out more about Breathwork and Meditation', destination='/retreats/') }}
+        </div>  
+        
+        <img
+          class="lg:mx-0 mx-auto h-full w-full max-w-96 max-h-96 object-cover"
+          src="/_includes/static/img/pexels-rpnickson-2609463.avif"
+          width="600px"
+          height="450px"
+          alt="2 women looking at the mountain in the background"
+        />
+      </div>
+    </div>
+</div>
+
+{% endmacro %}

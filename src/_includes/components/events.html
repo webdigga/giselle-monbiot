@@ -1,4 +1,4 @@
-{% macro aboutComponent() %}
+{% macro eventsComponent() %}
 
   {% import "./buttons/anchor.html" as anchorButton with context %}
 
@@ -8,18 +8,18 @@
       <div class="w-full justify-start items-center gap-8 grid lg:grid-cols-3 grid-cols-1 justify-items-end">
         <div class="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex lg:col-span-2 col-span-1">
           <div class="w-full flex-col justify-start lg:items-start items-center gap-4 flex">
-            <h2 class="lg:text-start text-center">About Giselle Monbiot</h2>
+            <h2 class="lg:text-start text-center">Events</h2>
             <p class="lg:text-start text-center">I am a Transformational Therapist, Compassionate Inquiry Practitioner and Breathwork Facilitator. I have a proven track record of guiding individuals, business and educational sectors to overcome the hurdles that they might face professionally and personally. The many benefits include improved physical and emotional wellbeing, energy, productivity, calmer mind and increased choices.</p>
           </div>
           
-          {{ anchorButton.anchor(type='primary', anchorText='Find out more about Giselle', destination='/about/') }}
+          {{ anchorButton.anchor(type='primary', anchorText='Find out more about Events', destination='/courses-and-events/') }}
         </div>
         <img
-          class="lg:mx-0 mx-auto h-full w-full max-w-96 max-h-96 rounded-full object-cover"
-          src="/_includes/static/img/Giselles-story-portrait-362x362.avif"
-          width="362px"
-          height="362px"
-          alt="Giselle Monbiot"
+          class="lg:mx-0 mx-auto h-full w-full max-w-96 max-h-96 object-cover"
+          src="/_includes/static/img/IMG-20240924-WA0004.avif"
+          width="600px"
+          height="450px"
+          alt="Giselle Monbiot hosting event"
         />
       </div>
     </div>

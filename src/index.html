@@ -14,6 +14,10 @@ eleventyComputed:
 {% import "./_includes/components/seoIntroText.html" as seoIntroText with context %}
 {% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
 {% import "./_includes/components/about.html" as about with context %}
+{% import "./_includes/components/breathwork-and-meditation.html" as breathworkAndMeditation with context %}
+{% import "./_includes/components/retreats.html" as retreats with context %}
+{% import "./_includes/components/1-2-1-therapy.html" as oneToOneTherapy with context %}
+{% import "./_includes/components/events.html" as events with context %}
 
 <div>
 
@@ -34,8 +38,24 @@ eleventyComputed:
     {{ seoIntroText.seoIntroTextComponent() }}
   </section>
 
-  <section class="bg-[color:var(--primary-colour)] text-[color:var(--white)]">
+  <section class="bg-[color:var(--tertiary-colour)] text-[color:var(--white)]">
     {{ about.aboutComponent() }}
+  </section>
+
+  <section class="bg-[color:var(--white)] text-[color:var(--dark-copy)]">
+    {{ breathworkAndMeditation.breathworkAndMeditationComponent() }}
+  </section>
+
+  <section class="bg-[color:var(--primary-colour)] text-[color:var(--white)]">
+    {{ retreats.retreatsComponent() }}
+  </section>
+
+  <section class="bg-[color:var(--white)] text-[color:var(--dark-copy)]">
+    {{ oneToOneTherapy.oneToOneTherapyComponent() }}
+  </section>
+
+  <section class="bg-[color:var(--tertiary-colour)] text-[color:var(--white)]">
+    {{ events.eventsComponent() }}
   </section>
 
   <section class="dark-copy container flex flex-col justify-center mx-auto">
