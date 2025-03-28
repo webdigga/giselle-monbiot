@@ -1,6 +1,17 @@
-<div class="flex flex-col lg:flex-row items-center justify-center text-center">
-  <div>
-    <h1 class="text-2xl sm:text-3xl tracking-tighter lg:text-4xl mb-5 text-[color:var(--earthy-beige-light)]">{{ hero.title | safe }}</h1>
-    <h2 class="text-[color:var(--earthy-beige-light)] tracking-tighter">{{ hero.subTitle | safe }}</h2>
+{% macro heroComponent(scope) %}
+  <div class="flex flex-col lg:flex-row items-center justify-center text-center">
+    <div>
+      <h1 class="text-2xl sm:text-3xl tracking-tighter lg:text-4xl mb-5">{{ scope.title | safe }}</h1>
+      <h2 class="tracking-tighter">{{ scope.subTitle | safe }}</h2>
+
+      {% if scope.phoneNumber  %}
+        <a          
+          href="tel:{{ scope.phoneNumber }}"  
+          class="cursor-pointer text-xl"
+        >
+          {{ scope.phoneNumber | safe }}
+        </a>
+      {% endif %}     
+    </div>
   </div>
-</div>
+{% endmacro %}

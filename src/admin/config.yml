@@ -153,9 +153,175 @@ collections:
             fields:
               - { label: Question, name: question, widget: string }
               - { label: Answer, name: answer, widget: string }
-      - label: "Hero"
-        name: "hero"
-        file: "src/_data/hero.yaml"
+      - label: "Home Hero"
+        name: "homeHero"
+        file: "src/_data/homeHero.yaml"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Sub title, name: subTitle, widget: string }
+      - label: "Contact Hero"
+        name: "contactHero"
+        file: "src/_data/contactHero.yaml"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Sub title, name: subTitle, widget: string }
+      - label: "One to One Therapy"
+        name: "oneToOneTherapy"
+        file: "src/_data/oneToOneTherapy.yaml"
+        fields:
+          - { label: "H2 Title", name: "title", widget: "string" }
+          - label: "Content"
+            name: "content"
+            widget: "markdown"
+          - { label: "Link Href", name: "linkHref", widget: "string" }
+          - { label: "Link Text", name: "linkText", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Image Alt", name: "imageAlt", widget: "string" }
+          - { 
+            label: "Image Width", 
+            name: "imageWidth", 
+            widget: "number", 
+            default: 0, 
+            hint: "Recommended width is 600px" 
+          }
+          - { 
+            label: "Image Height", 
+            name: "imageHeight", 
+            widget: "number", 
+            default: 0, 
+            hint: "Recommended height is 450px" 
+          }
+          - { label: "Is Image Rounded?", name: "isImageRounded", widget: "boolean", default: false }
+          - widget: select
+            label: "Image Position"
+            name: "imagePosition"
+            options: ["left", "right"]
+            default: "left"
+      - label: "Events"
+        name: "events"
+        file: "src/_data/events.yaml"
+        fields:
+          - { label: "H2 Title", name: "title", widget: "string" }
+          - label: "Content"
+            name: "content"
+            widget: "markdown"
+          - { label: "Link Href", name: "linkHref", widget: "string" }
+          - { label: "Link Text", name: "linkText", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Image Alt", name: "imageAlt", widget: "string" }
+          - { 
+            label: "Image Width", 
+            name: "imageWidth", 
+            widget: "number", 
+            default: 0, 
+            hint: "Recommended width is 600px" 
+          }
+          - { 
+            label: "Image Height", 
+            name: "imageHeight", 
+            widget: "number", 
+            default: 0, 
+            hint: "Recommended height is 450px" 
+          }
+          - { label: "Is Image Rounded?", name: "isImageRounded", widget: "boolean", default: false }
+          - widget: select
+            label: "Image Position"
+            name: "imagePosition"
+            options: ["left", "right"]
+            default: "left"
+      - label: "Retreats"
+        name: "retreats"
+        file: "src/_data/retreats.yaml"
+        fields:
+          - { label: "H2 Title", name: "title", widget: "string" }
+          - label: "Content"
+            name: "content"
+            widget: "markdown"
+          - { label: "Link Href", name: "linkHref", widget: "string" }
+          - { label: "Link Text", name: "linkText", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Image Alt", name: "imageAlt", widget: "string" }
+          - { 
+            label: "Image Width", 
+            name: "imageWidth", 
+            widget: "number", 
+            default: 0, 
+            hint: "Recommended width is 600px" 
+          }
+          - { 
+            label: "Image Height", 
+            name: "imageHeight", 
+            widget: "number", 
+            default: 0, 
+            hint: "Recommended height is 450px" 
+          }
+          - { label: "Is Image Rounded?", name: "isImageRounded", widget: "boolean", default: false }
+          - widget: select
+            label: "Image Position"
+            name: "imagePosition"
+            options: ["left", "right"]
+            default: "left"
+      - label: "Breathwork and Meditation"
+        name: "breathworkAndMeditation"
+        file: "src/_data/breathworkAndMeditation.yaml"
+        fields:
+          - { label: "H2 Title", name: "title", widget: "string" }
+          - label: "Content"
+            name: "content"
+            widget: "markdown"
+          - { label: "Link Href", name: "linkHref", widget: "string" }
+          - { label: "Link Text", name: "linkText", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Image Alt", name: "imageAlt", widget: "string" }
+          - { 
+            label: "Image Width", 
+            name: "imageWidth", 
+            widget: "number", 
+            default: 0, 
+            hint: "Recommended width is 600px" 
+          }
+          - { 
+            label: "Image Height", 
+            name: "imageHeight", 
+            widget: "number", 
+            default: 0, 
+            hint: "Recommended height is 450px" 
+          }
+          - { label: "Is Image Rounded?", name: "isImageRounded", widget: "boolean", default: false }
+          - widget: select
+            label: "Image Position"
+            name: "imagePosition"
+            options: ["left", "right"]
+            default: "left"
+      - label: "About"
+        name: "about"
+        file: "src/_data/about.yaml"
+        fields:
+          - { label: "H2 Title", name: "title", widget: "string" }
+          - label: "Content"
+            name: "content"
+            widget: "markdown"
+          - { label: "Link Href", name: "linkHref", widget: "string" }
+          - { label: "Link Text", name: "linkText", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Image Alt", name: "imageAlt", widget: "string" }
+          - { 
+            label: "Image Width", 
+            name: "imageWidth", 
+            widget: "number", 
+            default: 0, 
+            hint: "Recommended width is 600px" 
+          }
+          - { 
+            label: "Image Height", 
+            name: "imageHeight", 
+            widget: "number", 
+            default: 0, 
+            hint: "Recommended height is 450px" 
+          }
+          - { label: "Is Image Rounded?", name: "isImageRounded", widget: "boolean", default: false }
+          - widget: select
+            label: "Image Position"
+            name: "imagePosition"
+            options: ["left", "right"]
+            default: "left"

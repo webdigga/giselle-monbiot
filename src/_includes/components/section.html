@@ -1,0 +1,31 @@
+{% macro sectionComponent(scope, buttonType) %}
+
+  {% import "./buttons/anchor.html" as anchorButton with context %}
+
+  <div class="container container--large"> 
+
+    <div class="w-full mx-auto">
+      <div class="w-full justify-start items-center gap-8 grid lg:grid-cols-3 grid-cols-1 justify-items-end">
+        
+        <img
+          class="{% if scope.isImageRounded %}rounded-full{% endif %} lg:mx-0 mx-auto h-full w-full max-w-96 max-h-96 object-cover {% if scope.imagePosition == 'right' %} order-1 {% endif %}"
+          src="{{ scope.image }}"
+          width="{{ scope.imageWidth }}px"
+          height="{{ scope.imageHeight }}px"
+          alt="{{ scope.imageAlt}}"
+        />
+        
+        <div class="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex lg:col-span-2 col-span-1">
+          <div class="w-full flex-col justify-start lg:items-start items-center gap-4 flex">
+            <h2 class="lg:text-start text-center">{{ scope.title }}</h2>
+            <div class="lg:text-start text-center">{{ scope.content | markdownify | safe }}</div>
+          </div>
+          
+          {{ anchorButton.anchor(type=buttonType, anchorText=scope.linkText, destination=scope.linkHref) }}
+        </div>
+        
+      </div>
+    </div>
+</div>
+
+{% endmacro %}

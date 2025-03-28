@@ -13,22 +13,19 @@ eleventyComputed:
 {% import "./_includes/partials/navbar.html" as navBar with context %}
 {% import "./_includes/components/seoIntroText.html" as seoIntroText with context %}
 {% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
-{% import "./_includes/components/about.html" as about with context %}
-{% import "./_includes/components/breathwork-and-meditation.html" as breathworkAndMeditation with context %}
-{% import "./_includes/components/retreats.html" as retreats with context %}
-{% import "./_includes/components/1-2-1-therapy.html" as oneToOneTherapy with context %}
-{% import "./_includes/components/events.html" as events with context %}
+{% import "./_includes/components/section.html" as section with context %}
+{% import "./_includes/components/hero.html" as hero with context %}
 
 <div>
 
-  <section class="min-h-dvh flex flex-col border-b-4 border-b-[color:var(--primary-colour)] border-solid background-image-class">
+  <section class="min-h-dvh flex flex-col border-b-4 border-b-[color:var(--primary-colour)] border-solid home-background-image-class">
     
     <div>
       {{ navBar.nav(bgColour='bg-white') }}
     </div>
   
     <div class="container content-center grow">
-      {% include "./_includes/components/hero.html" %}
+      {{ hero.heroComponent(scope=homeHero) }}
     </div>
   
     {{ moreButton.button() }}
@@ -39,23 +36,23 @@ eleventyComputed:
   </section>
 
   <section class="bg-[color:var(--tertiary-colour)] text-[color:var(--white)]">
-    {{ about.aboutComponent() }}
+    {{ section.sectionComponent(scope=about, buttonType='primary') }}
   </section>
 
   <section class="bg-[color:var(--white)] text-[color:var(--dark-copy)]">
-    {{ breathworkAndMeditation.breathworkAndMeditationComponent() }}
+    {{ section.sectionComponent(scope=breathworkAndMeditation, buttonType='primary') }}
   </section>
 
   <section class="bg-[color:var(--primary-colour)] text-[color:var(--white)]">
-    {{ retreats.retreatsComponent() }}
+    {{ section.sectionComponent(scope=retreats, buttonType='tertiary') }}
   </section>
 
   <section class="bg-[color:var(--white)] text-[color:var(--dark-copy)]">
-    {{ oneToOneTherapy.oneToOneTherapyComponent() }}
+    {{ section.sectionComponent(scope=oneToOneTherapy, buttonType='primary') }}
   </section>
 
   <section class="bg-[color:var(--tertiary-colour)] text-[color:var(--white)]">
-    {{ events.eventsComponent() }}
+    {{ section.sectionComponent(scope=events, buttonType='primary') }}
   </section>
 
   <section class="dark-copy container flex flex-col justify-center mx-auto">
