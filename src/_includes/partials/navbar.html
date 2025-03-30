@@ -50,8 +50,8 @@
   
                 {% if item.secondLevelItems %}
   
-                  <li class="group text-[14px] max-lg:border-b max-lg:px-3 max-lg:py-2 relative">
-                    <a class="text-[color:var(--tertiary-colour)] hover:opacity-70 hover:fill-[#007bff font-medium text-[15px] block">{{ item.text }}
+                  <li class="group max-lg:border-b max-lg:px-3 max-lg:py-2 relative">
+                    <a class="text-[color:var(--tertiary-colour)] hover:opacity-70 hover:fill-[#007bff font-medium block">{{ item.text }}
                       <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="ml-1 inline-block" viewBox="0 0 24 24">
                         <path d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z" data-name="16" data-original="#000000"></path>
                       </svg>
@@ -62,7 +62,7 @@
   
                           {% for subItem in item.secondLevelItems %}
                             <li class="max-lg:border-b py-1 rounded">
-                              <a href="{{ subItem.url }}" class="hover:opacity-70 text-[color:var(--dark-copy)] font-normal text-[15px] block">{{ subItem.text }}</a>
+                              <a href="{{ subItem.url }}" class="hover:opacity-70 text-[color:var(--dark-copy)] font-normal block">{{ subItem.text }}</a>
                             </li>
                           {% endfor %}
                           
@@ -75,7 +75,7 @@
                 {% else %}
   
                   <li class="max-lg:border-b max-lg:px-3 max-lg:py-2">
-                    <a href="{{ item.url }}" class="text-[color:var(--tertiary-colour)] hover:opacity-70 font-medium text-[15px] block">{{ item.text }}</a>
+                    <a href="{{ item.url }}" class="text-[color:var(--tertiary-colour)] hover:opacity-70 font-medium block">{{ item.text }}</a>
                   </li>
   
                 {% endif %}

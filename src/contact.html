@@ -28,10 +28,14 @@ eleventyComputed:
     </div>
   
     {{ moreButton.button() }}
-  </section>  
+  </section>
 
-  <section class="dark-copy" data-test="moreButtonLocation">
-    {{ section.sectionComponent(scope=about) }}
+  <section class="bg-[color:var(--tertiary-colour)] text-[color:var(--white)]" data-test="moreButtonLocation">
+    {{ section.sectionComponent(scope=contact, type='contact', showCta=false) }}
+  </section>
+
+  <section class="dark-copy">
+    {{ section.sectionComponent(scope=about, showCta=false) }}
   </section>
 
 </div>

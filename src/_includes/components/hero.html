@@ -1,8 +1,8 @@
 {% macro heroComponent(scope) %}
-  <div class="flex flex-col lg:flex-row items-center justify-center text-center">
+  <div class="flex flex-col lg:flex-row items-center justify-center text-center max-w-3xl justify-self-center">
     <div>
-      <h1 class="text-2xl sm:text-3xl tracking-tighter lg:text-4xl mb-5">{{ scope.title | safe }}</h1>
-      <h2 class="tracking-tighter">{{ scope.subTitle | safe }}</h2>
+      <h1>{{ scope.title | safe }}</h1>
+      <h2>{{ scope.subTitle | safe }}</h2>
 
       {% if scope.phoneNumber  %}
         <a          

@@ -14,35 +14,69 @@
   --dark-copy: #333333;
 }
 
-body {
-  @apply text-white;
+.crimson-text-regular {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  font-family: "Roboto", sans-serif;
+.crimson-text-semibold {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.crimson-text-bold {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.crimson-text-regular-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.crimson-text-semibold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.crimson-text-bold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  @apply text-white text-lg;
+
+  font-family: "Crimson Text", sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
 h1, h2, h3, h4 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Crimson Text", sans-serif;
   font-style: normal;
 }
 
 h1 {
-  @apply text-2xl sm:text-3xl tracking-tighter lg:text-4xl mb-5;
+  @apply text-3xl sm:text-4xl lg:text-5xl mb-5;
 }
 
 h1, h2, h3, h4 {
-  @apply tracking-tighter;
-
-  font-weight: 700;
+  @apply crimson-text-semibold-italic;
 }
 
 h2 {
-  @apply text-xl sm:text-2xl lg:text-3xl mb-4;
+  @apply text-2xl sm:text-3xl lg:text-4xl mb-4;
 }
 
 h3, h4 {
-  @apply text-lg sm:text-xl lg:text-2xl mb-4;
+  @apply text-xl sm:text-2xl lg:text-3xl mb-4;
 }
 
 p {
@@ -115,7 +149,7 @@ img.Right {
 }
 
 .contact-background-image-class {
-  background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/pexels-creative-vix-9754.avif');
+  background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/pexels-lucaspezeta-2529375.avif');
   background-size: cover;
   background-position: center;
 }

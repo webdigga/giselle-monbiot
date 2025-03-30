@@ -165,6 +165,7 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Sub title, name: subTitle, widget: string }
+          - { label: Phone number, name: phoneNumber, widget: string }
       - label: "One to One Therapy"
         name: "oneToOneTherapy"
         file: "src/_data/oneToOneTherapy.yaml"
@@ -296,6 +297,38 @@ collections:
       - label: "About"
         name: "about"
         file: "src/_data/about.yaml"
+        fields:
+          - { label: "H2 Title", name: "title", widget: "string" }
+          - label: "Content"
+            name: "content"
+            widget: "markdown"
+          - { label: "Link Href", name: "linkHref", widget: "string" }
+          - { label: "Link Text", name: "linkText", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Image Alt", name: "imageAlt", widget: "string" }
+          - { 
+            label: "Image Width", 
+            name: "imageWidth", 
+            widget: "number", 
+            default: 0, 
+            hint: "Recommended width is 600px" 
+          }
+          - { 
+            label: "Image Height", 
+            name: "imageHeight", 
+            widget: "number", 
+            default: 0, 
+            hint: "Recommended height is 450px" 
+          }
+          - { label: "Is Image Rounded?", name: "isImageRounded", widget: "boolean", default: false }
+          - widget: select
+            label: "Image Position"
+            name: "imagePosition"
+            options: ["left", "right"]
+            default: "left"
+      - label: "Contact"
+        name: "contact"
+        file: "src/_data/contact.yaml"
         fields:
           - { label: "H2 Title", name: "title", widget: "string" }
           - label: "Content"

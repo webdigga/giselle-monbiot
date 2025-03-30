@@ -1,6 +1,7 @@
-{% macro sectionComponent(scope, buttonType) %}
+{% macro sectionComponent(scope, type, buttonType, showCta=true) %}
 
   {% import "./buttons/anchor.html" as anchorButton with context %}
+  {% import "./contactContent.html" as contactContent with context %}
 
   <div class="container container--large"> 
 
@@ -20,8 +21,14 @@
             <h2 class="lg:text-start text-center">{{ scope.title }}</h2>
             <div class="lg:text-start text-center">{{ scope.content | markdownify | safe }}</div>
           </div>
+
+          {% if type == 'contact' %}
+            {{ contactContent.contactContent() }}
+          {% endif %}
           
-          {{ anchorButton.anchor(type=buttonType, anchorText=scope.linkText, destination=scope.linkHref) }}
+          {% if showCta %}
+            {{ anchorButton.anchor(type=buttonType, anchorText=scope.linkText, destination=scope.linkHref) }}
+          {% endif %}
         </div>
         
       </div>
