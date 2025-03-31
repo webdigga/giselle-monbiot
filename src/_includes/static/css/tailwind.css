@@ -142,16 +142,17 @@ img.Right {
   @apply m-0 lg:float-right lg:pl-12 lg:pb-8 mt-0;
 }
 
-.home-background-image-class {
-  background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/pexels-shvetsa-4672717.avif');
+.background-image-class {
   background-size: cover;
   background-position: center;
 }
 
-.contact-background-image-class {
-  background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/pexels-lucaspezeta-2529375.avif');
-  background-size: cover;
-  background-position: center;
+.background-image-class--home {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/pexels-lucaspezeta-2529375.avif');
+}
+
+.background-image-class--contact {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/pexels-shvetsa-4672717.avif');
 }
 
 /* Syntax Highlighting*/
