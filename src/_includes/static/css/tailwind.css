@@ -152,7 +152,11 @@ img.Right {
 }
 
 .background-image-class--contact {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/pexels-shvetsa-4672717.avif');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/pexels-matthardy-1533720.avif');
+}
+
+.background-image-class--retreats {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/pexels-noellegracephotos-906097.avif');
 }
 
 /* Syntax Highlighting*/

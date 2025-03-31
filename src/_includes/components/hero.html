@@ -1,7 +1,12 @@
-{% macro heroComponent(scope) %}
+{% macro heroComponent(type, scope, seo) %}
   <div class="flex flex-col lg:flex-row items-center justify-center text-center max-w-3xl justify-self-center">
     <div>
-      <h1>{{ scope.title | safe }}</h1>
+      {% if type == 'home' %}
+        <h1>{{ scope.title | safe }}</h1>
+      {% else %}
+        <h1>{{ seo.title | safe }}</h1>
+      {% endif %}
+      
       <h2>{{ scope.subTitle | safe }}</h2>
 
       {% if scope.phoneNumber  %}

@@ -1,12 +1,12 @@
 ---
 layout: default
-path: home
-type: home
+path: contact
+type: contact
 ogType: website
 seoSchemaPageType: Organization
 eleventyComputed:
-  description: "{{ homepage.description }}"
-  seoTitle: "{{ homepage.seoTitle }}"
+  description: "{{ contactSeo.description }}"
+  seoTitle: "{{ contactSeo.seoTitle }}"
   canonical: "{{ env.site }}/"
 ---
 
@@ -24,7 +24,7 @@ eleventyComputed:
     </div>
   
     <div class="container content-center grow">      
-      {{ hero.heroComponent(scope=contactHero) }}
+      {{ hero.heroComponent(scope=contactHero, seo=contactSeo) }}
     </div>
   
     {{ moreButton.button() }}

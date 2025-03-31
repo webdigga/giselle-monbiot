@@ -5,8 +5,8 @@ type: home
 ogType: website
 seoSchemaPageType: Organization
 eleventyComputed:
-  description: "{{ homepage.description }}"
-  seoTitle: "{{ homepage.seoTitle }}"
+  description: "{{ homepageSeo.description }}"
+  seoTitle: "{{ homepageSeo.seoTitle }}"
   canonical: "{{ env.site }}/"
 ---
 
@@ -25,7 +25,7 @@ eleventyComputed:
     </div>
   
     <div class="container content-center grow">
-      {{ hero.heroComponent(scope=homeHero) }}
+      {{ hero.heroComponent(type='home', scope=homeHero, seo=homepageSeo) }}
     </div>
   
     {{ moreButton.button() }}
@@ -55,7 +55,7 @@ eleventyComputed:
     {{ section.sectionComponent(scope=events, buttonType='primary') }}
   </section>
 
-  <section class="dark-copy container flex flex-col justify-center mx-auto">
+  <section class="dark-copy container container--medium flex flex-col justify-center mx-auto">
 
     <h2>Latest News</h2>
 
