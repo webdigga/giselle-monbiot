@@ -2,6 +2,7 @@ module.exports = {
   content: [
     './src/**/*.{html,njk,js}',
     './src/index.html',
+    './src/_includes/partials/navbar.html',
   ],
   theme: {
     container: {
