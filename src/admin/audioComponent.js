@@ -6,7 +6,7 @@ CMS.registerEditorComponent({
         { name: "title", label: "Title", widget: "string" },
         { name: "subtitle", label: "Subtitle", widget: "string" }
     ],
-    pattern: /^<audio src="(.*)" title="(.*)" subtitle="(.*)"><\/audio>$/,
+    pattern: /^<audio src="(.*)" title="(.*)" subtitle="(.*)" controls><\/audio>$/,
     fromBlock: function(match) {
         return {
             audioUrl: match[1],
@@ -15,15 +15,7 @@ CMS.registerEditorComponent({
         };
     },
     toBlock: function(obj) {
-        return `
-            <div>
-                <h3>${obj.title}</h3>
-                <h4>${obj.subtitle}</h4>
-                <audio src="${obj.audioUrl}" controls>
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-        `;
+        return `<audio src="${obj.audioUrl}" title="${obj.title}" subtitle="${obj.subtitle}" controls></audio>`;
     },
     toPreview: function(obj) {
         return `
@@ -34,6 +26,6 @@ CMS.registerEditorComponent({
                     Your browser does not support the audio element.
                 </audio>
             </div>
-        `;
+        `.trim();
     }
 });

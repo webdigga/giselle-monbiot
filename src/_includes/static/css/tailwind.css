@@ -159,6 +159,10 @@ img.Right {
   background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/pexels-noellegracephotos-906097.avif');
 }
 
+.background-image-class--courses-and-events {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/pexels-anntarazevich-6512305.avif');
+}
+
 /* Syntax Highlighting*/
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {

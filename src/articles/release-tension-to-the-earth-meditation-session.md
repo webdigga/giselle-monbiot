@@ -23,17 +23,7 @@ Defence mechanisms are psychological strategies that individuals employ unconsci
 
 Are you looking for a guest speaker for your group or organisation? Would learning 60-second stress busters benefit you? I am currently in training with Dr Gabor Maté – the renowned expert in trauma, addiction, and stress. I offer engaging talks and practical strategies to help individuals and teams manage stress effectively.
 
-
-            <div>
-                <h3>Release Tension To The Earth</h3>
-                <h4>Guided meditation session</h4>
-                <audio src="/_includes/static/audio/Release-Tension-To-The-Earth.mp3" controls>
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-        
-
-### Women in Business Networking Lunch
+<audio src="/_includes/static/audio/Release-Tension-To-The-Earth.mp3" title="Release Tension To The Earth" subtitle="Guided meditation session" controls></audio>
 
 Understanding the Intricacies of the Autonomic Nervous System: Unveiling the Impact of Stress and Withdrawal. Have you ever wondered why you feel stressed, overwhelmed, or simply have the urge to withdraw? This session explores how your nervous system responds to stress and provides practical tools to regulate emotions and improve well-being.  
 
