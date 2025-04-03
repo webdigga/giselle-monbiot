@@ -14,13 +14,11 @@ eleventyComputed:
 {% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
 {% import "./_includes/components/hero.html" as hero with context %}
 
+{{ navBar.nav(bgColour='bg-white') }}
+
 <div>
 
-  <section class="min-h-dvh flex flex-col border-b-4 border-b-[color:var(--primary-colour)] border-solid background-image-class background-image-class--courses-and-events">
-    
-    <div>
-      {{ navBar.nav(bgColour='bg-white', textColour='text-white') }}
-    </div>
+  <section class="min-h-[calc(100vh-var(--nav-height))] flex flex-col border-b-4 border-b-[color:var(--primary-colour)] border-solid background-image-class background-image-class--courses-and-events">
   
     <div class="container content-center grow">      
       {{ hero.heroComponent(scope=coursesAndEventsHero, seo=coursesAndEventsSeo) }}

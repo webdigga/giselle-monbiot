@@ -16,14 +16,12 @@ eleventyComputed:
 {% import "./_includes/components/section.html" as section with context %}
 {% import "./_includes/components/hero.html" as hero with context %}
 
+{{ navBar.nav(bgColour='bg-white') }}
+
 <div>
 
-  <section class="min-h-dvh flex flex-col border-b-4 border-b-[color:var(--primary-colour)] border-solid background-image-class background-image-class--home">
-    
-    <div>
-      {{ navBar.nav(bgColour='bg-white') }}
-    </div>
-  
+  <section class="min-h-[calc(100vh-var(--nav-height))] flex flex-col border-b-4 border-b-[color:var(--primary-colour)] border-solid background-image-class background-image-class--home">
+
     <div class="container content-center grow">
       {{ hero.heroComponent(type='home', scope=homeHero, seo=homepageSeo) }}
     </div>

@@ -12,6 +12,7 @@
   --very-light-gray: #eaeaea;
   --dark-gray: #5f6571;
   --dark-copy: #333333;
+  --nav-height: 200px;
 }
 
 .crimson-text-regular {
@@ -123,11 +124,11 @@ img.Centre {
 }
 
 img.Left {
-  @apply m-0 md:float-left md:pr-12 md:pb-12 md:max-w-[50%];
+  @apply w-full m-0 md:float-left md:pr-12 md:pb-12 md:max-w-[50%];
 }
 
 img.Right {
-  @apply m-0 md:float-right md:pl-12 md:pb-12 md:max-w-[50%];
+  @apply w-full m-0 md:float-right md:pl-12 md:pb-12 md:max-w-[50%];
 }
 
 .youtube-embed {
