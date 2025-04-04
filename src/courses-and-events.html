@@ -18,7 +18,7 @@ eleventyComputed:
 
 <div>
 
-  <section class="min-h-[calc(100vh-var(--nav-height))] flex flex-col border-b-4 border-b-[color:var(--primary-colour)] border-solid background-image-class background-image-class--courses-and-events">
+  <section class="min-h-[calc(100dvh-var(--nav-height))] flex flex-col border-b-4 border-b-[color:var(--primary-colour)] border-solid background-image-class background-image-class--courses-and-events">
   
     <div class="container content-center grow">      
       {{ hero.heroComponent(scope=coursesAndEventsHero, seo=coursesAndEventsSeo) }}
@@ -27,7 +27,7 @@ eleventyComputed:
     {{ moreButton.button() }}
   </section>
 
-  <section class="dark-copy" data-test="moreButtonLocation">
+  <section class="dark-copy scroll-mt-[var(--nav-height)]" data-test="moreButtonLocation">
     <div class="container container--large prose">{{ coursesAndEventsIntroText.coursesAndEventsIntroText | markdownify | safe }}</div>
   </section>
 
