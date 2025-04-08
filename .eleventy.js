@@ -9,6 +9,7 @@ const tailwind = require('tailwindcss');
 const postCss = require('postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
+const { IdAttributePlugin } = require("@11ty/eleventy");
 
 require('dotenv').config();
 
@@ -31,6 +32,9 @@ module.exports = function (eleventyConfig) {
   // The asynchronous filter ensures that we can convert our CSS
   eleventyConfig.addWatchTarget('./src/_includes/styles/tailwind.css');
   eleventyConfig.addNunjucksAsyncFilter('postcss', postcssFilter);
+
+  // Add ID to all heading tags
+  eleventyConfig.addPlugin(IdAttributePlugin);
 
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);

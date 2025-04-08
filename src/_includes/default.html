@@ -105,11 +105,16 @@
       {% include "static/js/callMeAnchorBehaviour/callMeAnchorBehaviour.js" %}
     {% endset %}
 
+    {% set menuScroll %}
+      {% include "static/js/menuScroll/menuScroll.js" %}
+    {% endset %}
+
     <script type="module">
       {{ cookieConsent | jsmin | safe }}
       {{ menuToggle | jsmin | safe }}
       {{ moreButtonScroll | jsmin | safe }}
       {{ callMeAnchorBehaviour | jsmin | safe }}
+      {{ menuScroll | jsmin | safe }}
     </script>
 
   </body>

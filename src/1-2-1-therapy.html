@@ -5,8 +5,8 @@ type: home
 ogType: website
 seoSchemaPageType: Organization
 eleventyComputed:
-  description: "{{ coursesAndEventsSeo.description }}"
-  seoTitle: "{{ coursesAndEventsSeo.seoTitle }}"
+  description: "{{ oneToOneTherapySeo.description }}"
+  seoTitle: "{{ oneToOneTherapySeo.seoTitle }}"
   canonical: "{{ env.site }}/"
 ---
 
@@ -18,17 +18,17 @@ eleventyComputed:
 
 <div>
 
-  <section class="min-h-[calc(100dvh-var(--nav-height))] flex flex-col border-b-4 border-b-[color:var(--primary-colour)] border-solid background-image-class background-image-class--courses-and-events">
+  <section class="min-h-[calc(100dvh-var(--nav-height))] flex flex-col border-b-4 border-b-[color:var(--primary-colour)] border-solid background-image-class background-image-class--one-to-one-therapy">
   
     <div class="container content-center grow">      
-      {{ hero.heroComponent(scope=coursesAndEventsHero, seo=coursesAndEventsSeo) }}
+      {{ hero.heroComponent(scope=oneToOneTherapyHero, seo=oneToOneTherapySeo) }}
     </div>
   
     {{ moreButton.button() }}
   </section>
 
   <section class="dark-copy" data-test="moreButtonLocation">
-    <div class="container container--large prose">{{ coursesAndEventsIntroText.coursesAndEventsIntroText | markdownify | safe }}</div>
+    <div class="container container--large prose">{{ oneToOneTherapyIntroText.oneToOneTherapyIntroText | markdownify | safe }}</div>
   </section>
 
 </div>
