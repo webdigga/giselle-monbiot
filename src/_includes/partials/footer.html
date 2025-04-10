@@ -1,16 +1,16 @@
 {% import "../components/buttons/anchor.html" as anchor with context %}
 
 <footer class="relative py-20 flex flex-col items-center bg-[color:var(--primary-colour)] overflow-hidden md:py-40">
-  <div class="relative z-[1] !max-w-[800px] m-auto px-6 md:px-12">
+  <div class="relative z-[1] !max-w-[800px] m-auto px-6">
     
     
-      <div class="w-full grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-12 md:grid-cols-3 md:gap-16">
+      <div class="w-full grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-12 md:grid-cols-3">
 
         {% if navigation.firstLevelItems %}
-          <ul class="list-disc list-inside space-y-8">
+          <ul role="list" class="list-disc list-inside space-y-8">
             {% for item in navigation.firstLevelItems %}
               
-                {% if item.text !== 'Courses and Events' %}
+                {% if item.showInFooter !== false %}
 
                   <li>
                     <a
@@ -27,27 +27,25 @@
         {% endif %}                  
 
         {% for item in navigation.firstLevelItems %}
-          {% if item.text != 'Home' and item.text != 'Contact' and item.text != 'FAQs' and item.text != 'About Me' %}
+          
+          {% if item.secondLevelItems %}
+            <ul role="list" class="list-disc list-inside space-y-8">
+              {% for subItem in item.secondLevelItems %}
 
-            {% if item.secondLevelItems %}
-              <ul role="list" class="space-y-8">
-                {% for subItem in item.secondLevelItems %}
-
-                  <li>
-                    <a
-                      href="{{ subItem.url }}"
-                      class="flex items-center space-x-3 hover:opacity-70 transition">
-                        <span>{{ subItem.text }}</span>
-                    </a>
-                  </li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-            
-          {% endif %}
+                <li>
+                  <a
+                    href="{{ subItem.url }}"
+                    class="hover:opacity-70 transition">
+                      {{ subItem.text }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}            
+         
         {% endfor %}
         
-        <div class="mt-8 text-center sm:mt-0 sm:col-span-2 md:col-span-1 md:text-left">
+        <div class="mt-8 text-center sm:mt-0 sm:col-span-2 md:col-span-3">
           {% if settings.siteName %}
             <span class="block font-bold">{{ settings.siteName }}</span>
           {% endif %}
@@ -61,8 +59,7 @@
           </small>
         </div>
           
-      </div>
-      
+      </div>      
    
   </div>
 

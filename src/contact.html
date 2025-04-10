@@ -14,6 +14,7 @@ eleventyComputed:
 {% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
 {% import "./_includes/components/section.html" as section with context %}
 {% import "./_includes/components/hero.html" as hero with context %}
+{% import "./_includes/components/newsletterSignup.html" as newsletterSignup with context %}
 
 {{ navBar.nav(bgColour='bg-white') }}
 
@@ -28,12 +29,16 @@ eleventyComputed:
     {{ moreButton.button() }}
   </section>
 
-  <section class="bg-[color:var(--tertiary-colour)] text-[color:var(--white)]" data-test="moreButtonLocation">
+  <section class="bg-[color:var(--white)] text-[color:var(--dark-copy)]" data-test="moreButtonLocation">
     {{ section.sectionComponent(scope=contact, type='contact', showCta=false) }}
   </section>
 
-  <section class="dark-copy">
+  <section class="bg-[color:var(--tertiary-colour)] text-[color:var(--white)]">
     {{ section.sectionComponent(scope=about, showCta=false) }}
+  </section>
+
+  <section class="bg-[color:var(--white)] text-[color:var(--dark-copy)]">
+    {{ newsletterSignup.newsletterSignupComponent() }}
   </section>
 
 </div>

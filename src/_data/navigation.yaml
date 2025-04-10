@@ -1,6 +1,7 @@
 firstLevelItems:
   - text: Start Your Journey
     url: /start-your-journey/
+    showInFooter: false
     secondLevelItems:
       - text: 1-2-1 Therapy
         url: /1-2-1-therapy/
@@ -10,10 +11,11 @@ firstLevelItems:
         url: /frequently-asked-questions-faqs/
   - text: Discover
     url: /discover/
+    showInFooter: false
     secondLevelItems:
-      - text: Courses and Events
+      - text: Courses & Events
         url: /courses-and-events/
-      - text: Breathwork and Meditation
+      - text: Breathwork & Meditation
         url: /breathwork-and-meditation/
       - text: Retreats
         url: /retreats/
