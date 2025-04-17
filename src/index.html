@@ -15,6 +15,7 @@ eleventyComputed:
 {% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
 {% import "./_includes/components/section.html" as section with context %}
 {% import "./_includes/components/hero.html" as hero with context %}
+{% import "./_includes/components/newsletterSignup.html" as newsletterSignup with context %}
 
 {{ navBar.nav(bgColour='bg-white') }}
 
@@ -92,6 +93,10 @@ eleventyComputed:
       {% endfor %}
   
     </div>
+  </section>
+
+  <section class="bg-[color:var(--tertiary-colour)] text-[color:var(--white)]">
+    {{ newsletterSignup.newsletterSignupComponent(imagePosition='left') }}
   </section>
 
 </div>

@@ -12,6 +12,7 @@
   --very-light-gray: #eaeaea;
   --dark-gray: #5f6571;
   --dark-copy: #333333;
+  --warning-color: #a50303;
   --nav-height: 200px;
 }
 
@@ -170,6 +171,16 @@ img.Right {
 
 .background-image-class--breathwork-and-meditation {
   background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/pexels-daniel-flores-2150208368-31494106.avif');
+}
+
+/* Override 3rd party Mailchimp form validation */
+#mc_embed_signup div.mce_inline_error {
+  display: none !important;
+}
+
+#mc_embed_signup input.mce_inline_error {
+  border-color: var(--warning-color) !important;
+  border-width: 2px !important;
 }
 
 /* Syntax Highlighting*/

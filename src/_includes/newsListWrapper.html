@@ -3,6 +3,8 @@ layout: default
 ---
 
 {% import "./partials/navbar.html" as navBar with context %}
+{% import "./components/newsletterSignup.html" as newsletterSignup with context %}
+
 
 {{ navBar.nav(bgColour='bg-white') }}
 
@@ -19,3 +21,7 @@ layout: default
     {{ content | safe }}
 
 </div>
+
+<section class="bg-[color:var(--tertiary-colour)] text-[color:var(--white)]">
+  {{ newsletterSignup.newsletterSignupComponent(imagePosition='left') }}
+</section>
