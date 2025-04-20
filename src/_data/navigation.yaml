@@ -15,13 +15,14 @@ firstLevelItems:
     secondLevelItems:
       - text: Courses & Events
         url: /courses-and-events/
-      - text: Breathwork & Meditation
-        url: /breathwork-and-meditation/
-      - text: Retreats
-        url: /retreats/
+      - text: Breathwork
+        url: /breathwork/
   - text: About
-    url: /about-giselle-monbiot-somatic-psychotherapist-and-holistic-healer/
+    url: /about-giselle-monbiot-integrative-therapist-and-breathwork-facilitator/
+    showInFooter: true
   - text: News
     url: /news/
+    showInFooter: true
   - text: Contact
     url: /contact/
+    showInFooter: true

@@ -1,7 +1,7 @@
 ---
-title: About Giselle Monbiot - Somatic Psychotherapist & Holistic Healer
-seoTitle: Somatic Psychotherapist & Breathwork in Kingston | Giselle Monbiot
-description: Giselle Monbiot offers somatic psychotherapy and breathwork in
+title: About Giselle Monbiot - Integrative Therapist & Breathwork Facilitator
+seoTitle: Integrative Therapist and Breathwork Facilitator in Kingston | Giselle Monbiot
+description: Giselle Monbiot offers Integrative Therapy and Breathwork in
   Kingston, London. Heal through connection to self, nature, spirit and
   community.
 author: David White
@@ -15,9 +15,9 @@ tags:
 ---
 <img src="/_includes/static/img/img_20240430_092540.avif" alt="Giselle Monbiot" title="Giselle Monbiot" class="Right" width="600px" height="600px" loading="lazy"/>
 
-## Holistic Wellness Practitioner & Somatic Psychotherapist
+## Integrative Therapist and Breathwork Facilitator
 
-Based in the vibrant community of Kingston, London, I guide individuals on their journey toward wholeness through a comprehensive approach to healing and personal development.
+Based in the vibrant community of Kingston, London, I guide individuals on their journey toward wholeness through a comprehensive approach to healing and personal development. Embodied wellbeing to connect, heal and thrive. Where inner self, body and breath come together.
 
 - - -
 
@@ -27,60 +27,58 @@ At the heart of my practice lies the fundamental belief that true wellbeing emer
 
 ### Connection to Self
 
-Reconnecting with your authentic core is the foundation of all healing. Through somatic awareness and mindful practices, I help you rediscover the wisdom of your body and the clarity of your inner voice.
+Reconnecting with your authentic core is the foundation of all healing. Through somatic awareness, breathwork, mindful practices and therapeutic enquiry, I enable you to rediscover the clarity of your inner voice. It’s about being in a regulated state where you can feel your own presence, tune into your inner world, and respond to life from a place of safety and awareness rather than reactivity or survival. The goal isn’t to always be “regulated,” but to recognise when we’ve moved away from connection, and gently find our way back.
 
-### Connection to Nature
+### Connection to Others
 
-Our disconnection from the natural world has profound effects on our wellbeing. My approach incorporates nature-based healing modalities that restore our vital relationship with the earth and its rhythms.
+This is about your capacity to feel safe in relationship. To be seen, heard, accepted, and to offer that same presence in return. When we are connected to others from a place of regulation we experience co-regulation. That subtle, powerful nervous system-to-nervous system dance that tells us: you are safe, you are not alone, you matter. Healing occurs in relationship with others. This can be in the form of a therapeutic relationship or a group setting, where vulnerability is met with kindness and compassion.
+
+### Connection to World & Nature
+
+Having awareness of your sense of safety and belonging within your environment. This includes your surroundings, communities, and the natural world. It’s about how your nervous system responds not just to people, but also to places, spaces, and systems around you. When this connection is strong, we feel more anchored, empowered, and at ease in daily life.
 
 ### Connection to Spirit
 
-Whether through meditation, breathwork, or contemplative practices, nurturing our spiritual dimension brings depth, meaning, and purpose to our lives. I create safe spaces for you to explore and strengthen this essential aspect of your being.
-
-### Connection to Community
-
-Healing happens in relationship. Through both individual work and group experiences, I facilitate authentic connections that support sustainable transformation and growth.
+Your felt sense of something greater than yourself. This could be interpreted in many ways depending on your belief system. As a connection to a higher power, divine presence, the soul, universal energy, nature, love, or simply a deep inner wisdom that guides and holds us. it’s about cultivating a sense of being held, guided, and connected beyond the physical.
 
 - - -
 
 ## My Offerings
 
-### Somatic Psychotherapy
+### Integrative Therapy
 
-As a trained somatic psychotherapist, I integrate body-centered approaches with traditional talk therapy to address the whole person. This powerful combination helps release trauma stored in the body while creating new neural pathways for lasting change.
+I offer an integrative approach that connects what’s happening in your mind with what’s being held and expressed in your body. By weaving together therapeutic exploration, breathwork,and somatic practices, I support you to release old patterns, feel more present, and reconnect with your true self.
 
-### Breathwork Sessions
+### **Mindful Movement**
 
-Experience the transformative power of conscious breathing. My guided breathwork sessions help release emotional blockages, reduce stress, enhance mental clarity, and connect you with deeper states of awareness.
+A gentle, body-led practice that helps you reconnect with yourself through slow, intentional movement. It supports emotional release, eases tension, and brings calm to the nervous system, helping you feel more grounded, present and at ease. Offered as part of therapy sessions, in group courses, or as a standalone session, this practice is accessible to all bodies and no experience is needed.
 
-### Meditation & Mindfulness Training
+### **Courses & Events**
 
-Learn practical, accessible meditation techniques tailored to your unique needs and lifestyle. From beginners to experienced practitioners, my approach meets you where you are and helps establish a sustainable practice.
+Throughout the year, I offer a range of specialised events and courses designed to support healing, reconnection and inner balance. These include breathwork courses where you’ll learn the restorative art of conscious breathing, women’s groups that weave together meditation, mindful movement, breathwork and deep guided relaxation, and monthly Breathwork Circles offering Conscious Connected Breathwork in a safe and supportive space.
 
-### Courses & Events
+[Explore all upcoming courses and events »](/courses-and-events/)
 
-Throughout the year, I offer specialized workshops and courses on topics ranging from stress reduction to spiritual development. These carefully crafted experiences combine theory with experiential learning in supportive group settings.
+### **Retreats**
 
-### Seasonal Retreats
+My retreats offer a sacred pause from the busyness of life. A space to slow down, reconnect, and nourish your whole self. Held in calming, natural settings, these one day, multi day or seasonal gatherings weave together breathwork, mindful movement, therapeutic inquiry, guided relaxation, and conscious connection with others. Each retreat is carefully crafted to support emotional release, inner clarity and a return to your authentic rhythm. Whether you're seeking renewal, healing, or space to simply be, these retreats offer a deeply held space to come home to yourself.
 
-Immerse yourself in transformative multi-day experiences designed to deepen your practice and catalyze meaningful change. My retreats combine all elements of my work in beautiful natural settings, allowing for profound restoration and insight.
+[View retreat offerings and upcoming events »](/courses-and-events/)
 
 - - -
 
 ## My Journey
 
-My path to this work began through my own healing journey. After years in the corporate world left me disconnected and depleted, I discovered the transformative power of somatic work and integrated spiritual practice.
+For the past 26 years, I have walked the path of healing. First for myself, and now for the women I support. My journey began at 18, navigating deep trauma, grief, and isolation without the authentic support I so deeply needed. Over time, I came to realise that I wasn’t broken. I simply needed to sit with my unexpressed emotions, release the stories that weren’t mine, and trust my own inner voice rather than the limiting beliefs of others. Through years of personal exploration and professional training, I have gathered a powerful and integrative toolkit that helps women untangle the patterns, coping mechanisms, and self-doubt that keep them stuck.
 
-This personal transformation led me to extensive training in somatic psychotherapy, breathwork facilitation, and meditation instruction. I bring these diverse modalities together with my lived experience to create a unique approach that honors the complexity of the human experience.
-
-Today, I'm privileged to guide others on their own journeys toward wholeness, supporting them as they navigate life's challenges and discover their inherent capacity for healing and growth.
+Now, as a Compassionate Inquiry® Practitioner trained by Dr. Gabor Maté, a trauma-release specialist, and an advanced breathwork facilitator, I guide women through their own journeys of healing and transformation. I take a deeply holistic approach, working with the mind, body, and breath to create a space where real change can unfold. Whether in one-to-one sessions or group settings, I help women navigate life’s transitions—including the often-overlooked emotional impact of perimenopause—so they can release what no longer serves them, reconnect with their truth, and step into a life where they truly thrive.
 
 - - -
 
 ## Work With Me
 
-Whether you're seeking support through a difficult transition, looking to deepen your spiritual practice, or simply curious about how this work might serve you, I invite you to reach out for a consultation.
+Whether you're navigating a life transition, longing for deeper connection with yourself, or simply curious about how this work might support you, I invite you to reach out for a Initial Conversation.
 
-Every journey begins with a single step, and I'm honored to walk alongside you as you move toward greater wholeness and authenticity.
+Every journey begins with a single step, and it would be a privilege to walk alongside you as you move towards greater wholeness, truth, and ease in your life.
 
-*"The healing journey is not about becoming someone new, but about remembering who you've always been." - Giselle Monbiot*
+"*The healing journey is not about becoming someone new, but about remembering who you've always been.*" - Giselle Monbiot
