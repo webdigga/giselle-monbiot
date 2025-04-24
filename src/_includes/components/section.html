@@ -2,6 +2,7 @@
 
   {% import "./buttons/anchor.html" as anchorButton with context %}
   {% import "./contactContent.html" as contactContent with context %}
+  {% import "./contactFormContent.html" as contactFormContent with context %}
 
   <div class="container container--large"> 
 
@@ -24,6 +25,10 @@
 
           {% if type == 'contact' %}
             {{ contactContent.contactContent() }}
+          {% endif %}
+
+          {% if type == 'contactForm' %}
+            {{ contactFormContent.contactFormContent() }}
           {% endif %}
           
           {% if showCta %}

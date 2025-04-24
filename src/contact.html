@@ -27,18 +27,22 @@ eleventyComputed:
     </div>
   
     {{ moreButton.button() }}
-  </section>
+  </section>  
 
   <section class="bg-[color:var(--white)] text-[color:var(--dark-copy)]" data-test="moreButtonLocation">
-    {{ section.sectionComponent(scope=contact, type='contact', showCta=false) }}
+    {{ section.sectionComponent(scope=contactForm, type='contactForm', showCta=false) }}
   </section>
 
   <section class="bg-[color:var(--tertiary-colour)] text-[color:var(--white)]">
-    {{ section.sectionComponent(scope=about, showCta=false) }}
+    {{ section.sectionComponent(scope=contact, type='contact', showCta=false) }}
   </section>
 
   <section class="bg-[color:var(--white)] text-[color:var(--dark-copy)]">
-    {{ newsletterSignup.newsletterSignupComponent(imagePosition='left') }}
+    {{ section.sectionComponent(scope=about, showCta=false) }}
   </section>
+
+  <section class="bg-[color:var(--tertiary-colour)] text-[color:var(--white)]">
+    {{ newsletterSignup.newsletterSignupComponent(imagePosition='left') }}
+  </section>  
 
 </div>

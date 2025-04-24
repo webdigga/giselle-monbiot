@@ -9,6 +9,16 @@
       
       <h2>{{ scope.subTitle | safe }}</h2>
 
+      {% if scope.email  %}
+        <a
+          href="mailto:{{ scope.email }}"
+          class="cursor-pointer text-xl crimson-text-regular-italic"
+          target="_blank"
+          rel="noopener noreferrer">
+          {{ scope.email | safe }}
+        </a>
+      {% endif %}  
+
       {% if scope.phoneNumber  %}
         <a          
           href="tel:{{ scope.phoneNumber }}"  

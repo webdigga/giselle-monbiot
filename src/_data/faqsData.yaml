@@ -1,27 +1,57 @@
 faqs:
-  - question: "What services does Giselle Monbiot offer?"
-    answer: "Giselle Monbiot offers 1-2-1 Therapy, Breathwork, and various Courses and Events designed to support your mental, emotional, and spiritual wellbeing."
-  - question: "What qualifications does Giselle have?"
-    answer: "Giselle Monbiot is a qualified therapist with [specific qualifications and years of experience]. Her approach integrates traditional therapeutic techniques with breathwork and holistic wellness practices."
-  - question: "What is Giselle's therapeutic approach?"
-    answer: "Giselle's approach is integrative, drawing from various modalities including [specific therapy approaches]. She believes in treating the whole person—mind, body, and spirit—and tailors her approach to each individual's unique needs."
-  - question: "What issues can Giselle help me with?"
-    answer: "Giselle works with clients on a wide range of concerns including anxiety, depression, stress management, personal growth, relationship issues, trauma recovery, and life transitions."
-  - question: "How long are therapy sessions?"
-    answer: "Individual therapy sessions are [duration, e.g., 50 minutes] long."
-  - question: "How often will we meet for therapy?"
-    answer: "Most clients begin with weekly sessions. As progress is made, sessions may be spaced further apart. Giselle will work with you to determine the best frequency for your needs."
-  - question: "What happens in the first therapy session?"
-    answer: "The initial session is an opportunity for Giselle to learn about your concerns and goals, explain her approach, and determine if you're a good fit for working together. You'll discuss your history, current challenges, and what you hope to achieve."
-  - question: "How many therapy sessions will I need?"
-    answer: "The number of sessions varies depending on your specific concerns and goals. Some clients achieve their goals in just a few sessions, while others benefit from longer-term support. Giselle will regularly review progress with you."
-  - question: "Is what I share in therapy confidential?"
-    answer: "Yes, confidentiality is a cornerstone of therapy. There are specific legal limitations to confidentiality (such as risk of harm to self or others) which Giselle will explain during your first session."
-  - question: "What is breathwork?"
-    answer: "Breathwork refers to various breathing techniques that influence your mental, emotional, and physical state. By consciously changing your breathing patterns, you can reduce stress, process emotions, increase energy, and promote healing."
-  - question: "What type of breathwork does Giselle practice?"
-    answer: "Giselle is trained in [specific breathwork modalities, e.g., Holotropic, Transformational, Wim Hof]."
-  - question: "What are the benefits of breathwork?"
-    answer: "Benefits may include reduced anxiety and stress, emotional release, improved energy, enhanced self-awareness, greater mental clarity, and deeper connection to self."
-  - question: "Is breathwork suitable for everyone?"
-    answer: "While breathwork is generally safe, it may not be recommended for people with certain medical conditions including cardiovascular issues, severe psychiatric conditions, recent surgery, glaucoma, or during pregnancy. Please consult with your healthcare provider first."
+  - question: What services does Giselle Monbiot offer?
+    answer: Giselle Monbiot offers 1-2-1 Therapy, Breathwork, and various Courses
+      and Events designed to support your mental, emotional, and spiritual
+      wellbeing.
+  - question: What qualifications does Giselle have?
+    answer: Giselle Monbiot is a qualified therapist with [specific qualifications
+      and years of experience]. Her approach integrates traditional therapeutic
+      techniques with breathwork and holistic wellness practices.
+  - question: What is Giselle's therapeutic approach?
+    answer: "Giselle's approach is integrative, drawing from various modalities
+      including Compassionate Inquiry, Advanced EMDR, breathwork and holistic
+      wellness practices.  She believes in treating the whole person—mind, body,
+      and spirit—and tailors her approach to each individual's unique needs
+      integrating the powerful combination of connecting what is happening
+      within both the mind and the body to create a deep inner healing. "
+  - question: What issues can Giselle help me with?
+    answer: Giselle works with clients on a wide range of concerns including
+      anxiety, depression, stress management, personal growth, relationship
+      issues, trauma recovery, and life transitions.
+  - question: How long are therapy sessions?
+    answer: Individual therapy sessions are one hour unless longer is specified.
+  - question: How often will we meet for therapy?
+    answer: Most clients begin with weekly sessions. As progress is made, sessions
+      may be spaced further apart. Giselle will work with you to determine the
+      best frequency for your needs.
+  - question: What happens in the first therapy session?
+    answer: The initial session is an opportunity for Giselle to learn about your
+      concerns and goals, explain her approach, and determine if you're a good
+      fit for working together. You'll discuss your history, current challenges,
+      and what you hope to achieve.
+  - question: How many therapy sessions will I need?
+    answer: The number of sessions varies depending on your specific concerns and
+      goals. Some clients achieve their goals in just a few sessions, while
+      others benefit from longer-term support. Giselle will regularly review
+      progress with you.
+  - question: Is what I share in therapy confidential?
+    answer: Yes, confidentiality is a cornerstone of therapy. There are specific
+      legal limitations to confidentiality (such as risk of harm to self or
+      others) which Giselle will explain during your first session.
+  - question: What is breathwork?
+    answer: Breathwork refers to various breathing techniques that influence your
+      mental, emotional, and physical state. By consciously changing your
+      breathing patterns, you can reduce stress, process emotions, increase
+      energy, and promote healing.
+  - question: What type of breathwork does Giselle practice?
+    answer: Giselle is trained in functional breathwork and consious connected
+      breathwork.
+  - question: What are the benefits of breathwork?
+    answer: Benefits may include reduced anxiety and stress, emotional release,
+      improved energy, enhanced self-awareness, greater mental clarity, and
+      deeper connection to self.
+  - question: Is breathwork suitable for everyone?
+    answer: While breathwork is generally safe, it may not be recommended for people
+      with certain medical conditions including cardiovascular issues, severe
+      psychiatric conditions, recent surgery, glaucoma, or during pregnancy.
+      Please consult with your healthcare provider first.

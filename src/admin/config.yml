@@ -286,7 +286,7 @@ collections:
         file: "src/_data/contactHero.yaml"
         fields:
           - { label: Sub title, name: subTitle, widget: string }
-          - { label: Phone number, name: phoneNumber, widget: string }
+          - { label: Email, name: email, widget: string }
       - label: "Course and Events Hero"
         name: "coursesAndEventsHero"
         file: "src/_data/coursesAndEventsHero.yaml"
@@ -465,6 +465,38 @@ collections:
       - label: "Contact"
         name: "contact"
         file: "src/_data/contact.yaml"
+        fields:
+          - { label: "H2 Title", name: "title", widget: "string" }
+          - label: "Content"
+            name: "content"
+            widget: "markdown"
+          - { label: "Link Href", name: "linkHref", widget: "string" }
+          - { label: "Link Text", name: "linkText", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Image Alt", name: "imageAlt", widget: "string" }
+          - { 
+            label: "Image Width", 
+            name: "imageWidth", 
+            widget: "number", 
+            default: 0, 
+            hint: "Recommended width is 600px" 
+          }
+          - { 
+            label: "Image Height", 
+            name: "imageHeight", 
+            widget: "number", 
+            default: 0, 
+            hint: "Recommended height is 450px" 
+          }
+          - { label: "Is Image Rounded?", name: "isImageRounded", widget: "boolean", default: false }
+          - widget: select
+            label: "Image Position"
+            name: "imagePosition"
+            options: ["left", "right"]
+            default: "left"
+      - label: "Contact Form"
+        name: "contactForm"
+        file: "src/_data/contactForm.yaml"
         fields:
           - { label: "H2 Title", name: "title", widget: "string" }
           - label: "Content"
