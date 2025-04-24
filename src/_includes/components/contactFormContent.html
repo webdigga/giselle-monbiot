@@ -1,17 +1,20 @@
 {% macro contactFormContent() %}
   <form name="contact" method="POST" netlify class="w-full" action="/thank-you-for-getting-in-touch/">
 
-    <div class="lg:flex lg:flex-row lg:gap-x-8">    
+    <div class="lg:grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8">    
       <p class="mb-0 w-full">
-        <label>Your Name: <input type="text" name="name" class="rounded-xl bg-white w-full h-12 text-gray-600 placeholder-gray-400 bg-transparent text-lg font-normal leading-7 border border-gray-200 focus:outline-none pl-4 mb-5" /></label>
+        <label>Your Name: <input required type="text" name="name" class="rounded-xl bg-white w-full h-12 text-gray-600 placeholder-gray-400 bg-transparent text-lg font-normal leading-7 border border-gray-200 focus:outline-none pl-4 mb-5" /></label>
       </p>
       <p class="mb-0 w-full">
-        <label>Your Email: <input type="email" name="email" class="rounded-xl bg-white w-full h-12 text-gray-600 placeholder-gray-400 bg-transparent text-lg font-normal leading-7 border border-gray-200 focus:outline-none pl-4 mb-5" /></label>
+        <label>Your Phone Number: <input required pattern="[0-9]+" type="tel" name="phone" class="rounded-xl bg-white w-full h-12 text-gray-600 placeholder-gray-400 bg-transparent text-lg font-normal leading-7 border border-gray-200 focus:outline-none pl-4 mb-5" /></label>
+      </p>
+      <p class="mb-0 w-full lg:col-span-2">
+        <label>Your Email: <input required type="email" name="email" class="rounded-xl bg-white w-full h-12 text-gray-600 placeholder-gray-400 bg-transparent text-lg font-normal leading-7 border border-gray-200 focus:outline-none pl-4 mb-5" /></label>
       </p>
     </div>
     
     <p class="mb-0">
-      <label>Message: <textarea rows="10" name="message" class="py-4 rounded-xl bg-white w-full h-32 text-gray-600 placeholder-gray-400 bg-transparent text-lg font-normal leading-7 border border-gray-200 focus:outline-none pl-4 mb-5"></textarea></label>
+      <label>Message: <textarea required rows="10" name="message" class="py-4 rounded-xl bg-white w-full h-32 text-gray-600 placeholder-gray-400 bg-transparent text-lg font-normal leading-7 border border-gray-200 focus:outline-none pl-4 mb-5"></textarea></label>
     </p>
     <p class="mb-0">
       <button type="submit" class="w-full lg:w-1/2 mb-4 rounded-2xl inline-block py-4 px-6 cursor-pointer hover:opacity-80 bg-[color:var(--primary-colour)] text-[color:var(--white)]">Send</button>
