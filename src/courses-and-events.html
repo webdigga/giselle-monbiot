@@ -13,6 +13,7 @@ eleventyComputed:
 {% import "./_includes/partials/navbar.html" as navBar with context %}
 {% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
 {% import "./_includes/components/hero.html" as hero with context %}
+{% import "./_includes/components/events.html" as events with context %}
 
 {{ navBar.nav(bgColour='bg-white') }}
 
@@ -28,7 +29,13 @@ eleventyComputed:
   </section>
 
   <section class="dark-copy" data-test="moreButtonLocation">
-    <div class="container container--large prose">{{ coursesAndEventsIntroText.coursesAndEventsIntroText | markdownify | safe }}</div>
+    <div class="container container--medium prose">{{ coursesAndEventsIntroText.coursesAndEventsIntroText | markdownify | safe }}</div>
+  </section>
+
+  <section>
+    <div class="container">
+      {{ events.eventsComponent() }}
+    </div>
   </section>
 
 </div>

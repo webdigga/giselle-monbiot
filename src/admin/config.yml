@@ -9,6 +9,25 @@ public_folder: "/_includes/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
+  - label: "Events List"
+    name: "eventsList"
+    folder: "src/eventsList"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Type", name: "type", widget: "select", options: ["Courses and Event", "Retreat"] }
+      - { label: "Start Date", name: "start_date", widget: "datetime" }
+      - { label: "End Date", name: "end_date", widget: "datetime" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Price", name: "price", widget: "string" }
+      - widget: select
+        label: "tags"
+        name: "tags"
+        multiple: false
+        create: false
+        options: ["event"]
+        default: ["event"]
   - name: "snippets"
     label: "Snippets"
     files:

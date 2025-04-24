@@ -1,0 +1,59 @@
+{% macro eventsComponent() %}
+
+  {# First, check if there are any "Courses and Event" entries #}
+  {% set hasCourses = false %}
+
+
+  {# Check if there are any events of type "Courses and Event" #}
+
+  {% for event in collections.event %}
+    {% if event.data.type == "Courses and Event" %}
+      {% set hasCourses = true %}
+    {% endif %}
+  {% endfor %}
+
+  {% if hasCourses %}
+    <h2 class="text-[color:var(--primary-colour)] mb-4">Courses and Events</h2>
+    <div class="grid gap-6 mb-10">
+      {% for event in collections.event %}
+        {% if event.data.type == "Courses and Event" %}
+          <div class="bg-[color:var(--quaternary-colour)] border-l-4 border-[color:var(--secondary-colour)] p-6 ">
+            <h3 class="font-semibold mb-2">{{ event.data.title }}</h3>
+            <p>{{ event.data.start_date | readableDate }} - {{ event.data.end_date | readableDate }}</p>
+            <p class="mb-1"><strong>Location:</strong> {{ event.data.location }}</p>
+            <p class="mb-1"><strong>Price:</strong> {{ event.data.price }}</p>
+            <p class="mt-2">{{ event.data.description }}</p>
+            <a href="/contact/#contact" class="underline">Find out more about {{ event.data.title }}</a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {# Now check and render "Retreat" entries #}
+  {% set hasRetreats = false %}
+  {% for event in collections.event %}
+    {% if event.data.type == "Retreat" %}
+      {% set hasRetreats = true %}
+    {% endif %}
+  {% endfor %}
+
+  {% if hasRetreats %}
+    <h2 class="text-[color:var(--tertiary-colour)] mb-4">Retreats</h2>
+    <div class="grid gap-6">
+      {% for event in collections.event %}
+        {% if event.data.type == "Retreat" %}
+          <div class="bg-[color:var(--tertiary-colour)] border-l-4 border-[color:var(--secondary-colour)] p-6">
+            <h3 class="font-semibold mb-2">{{ event.data.title }}</h3>
+            <p>{{ event.data.start_date | readableDate }} - {{ event.data.end_date | readableDate }}</p>
+            <p class="mb-1"><strong>Location:</strong> {{ event.data.location }}</p>
+            <p class="mb-1"><strong>Price:</strong> {{ event.data.price }}</p>
+            <p class="mt-2">{{ event.data.description }}</p>
+            <a href="/contact/#contact" class="underline">Find out more about {{ event.data.title }}</a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+{% endmacro %}
