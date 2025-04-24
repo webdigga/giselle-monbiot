@@ -1,9 +1,9 @@
 {% macro nav(bgColour, textColour) %}
 
   {% if textColour == 'text-white' %}
-    {% set textColourClass = 'text-[color:var(--tertiary-colour)] lg:text-white' %}
+    {% set textColourClass = 'text-[color:var(--secondary-colour)] lg:text-white' %}
   {% else %}
-    {% set textColourClass = 'text-[color:var(--tertiary-colour)] lg:text-[color:var(--tertiary-colour)]' %}
+    {% set textColourClass = 'text-[color:var(--secondary-colour)] lg:text-[color:var(--secondary-colour)]' %}
   {% endif %}
 
   <nav
