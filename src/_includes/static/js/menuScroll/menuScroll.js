@@ -23,7 +23,7 @@ function menuScroll() {
     }
     
     // Scrolling down
-    if (currentScrollTop > lastScrollTop && currentScrollTop > 50) {
+    if (currentScrollTop > lastScrollTop && currentScrollTop > 200) {
       menu.style.top = `-${menuHeight}px`; // Hide menu by moving it up out of view
     } 
     // Scrolling up
