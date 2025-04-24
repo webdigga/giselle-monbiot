@@ -5,8 +5,8 @@ firstLevelItems:
     secondLevelItems:
       - text: 1-2-1 Therapy
         url: /1-2-1-therapy/
-      - text: Book a session
-        url: /contact/
+      - text: Book your Free Introductory Call
+        url: /contact/#contact
       - text: FAQs
         url: /frequently-asked-questions-faqs/
   - text: Discover
