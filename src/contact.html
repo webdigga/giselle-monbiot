@@ -3,11 +3,11 @@ layout: default
 path: contact
 type: contact
 ogType: website
-seoSchemaPageType: Organization
+seoSchemaPageType: Contact
 eleventyComputed:
   description: "{{ contactSeo.description }}"
   seoTitle: "{{ contactSeo.seoTitle }}"
-  canonical: "{{ env.site }}/"
+  canonical: "{{ env.site }}/contact/"
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
