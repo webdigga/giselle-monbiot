@@ -151,27 +151,26 @@ img.Right {
 }
 
 .background-image-class--home {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/8df67644764a2b3ed2ba288a5801375a-xxlarge-cropped.avif');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5) ), url('/_includes/static/img/temp-delete/home.jpg');
+  background-position: 50% 25%;
 }
 
 .background-image-class--contact {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/pexels-matthardy-1533720.avif');
-}
-
-.background-image-class--retreats {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/pexels-noellegracephotos-906097.avif');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5) ), url('/_includes/static/img/temp-delete/contact.jpg');
+  background-position: 50% 25%;
 }
 
 .background-image-class--courses-and-events {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/pexels-anntarazevich-6512305.avif');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5) ), url('/_includes/static/img/temp-delete/course-and-events.jpg');
+  background-position: 50% 25%;
 }
 
 .background-image-class--one-to-one-therapy {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/pexels-alex-green-5699431.avif');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5) ), url('/_includes/static/img/pexels-alex-green-5699431.avif');
 }
 
 .background-image-class--breathwork-and-meditation {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6) ), url('/_includes/static/img/pexels-daniel-flores-2150208368-31494106.avif');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5) ), url('/_includes/static/img/temp-delete/breathwork.jpg');
 }
 
 /* Override 3rd party Mailchimp form validation */
