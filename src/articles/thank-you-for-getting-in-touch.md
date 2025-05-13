@@ -23,7 +23,7 @@ I'll be in touch with you very soon. In the meantime, if you're curious to learn
 
 ### ✨ Therapy with Me
 
-As an [integrative therapist](/1-2-1-therapy/), I draw on a range of approaches to help you feel seen, supported, and gently guided — whether you’re navigating anxiety, relationship challenges, or simply feeling stuck.
+As an [integrative therapist](/one-to-one-therapy/), I draw on a range of approaches to help you feel seen, supported, and gently guided — whether you’re navigating anxiety, relationship challenges, or simply feeling stuck.
 
 ---
 

@@ -51,11 +51,11 @@ collections:
           - label: "Courses and Events Intro Text"
             name: "coursesAndEventsIntroText"
             widget: "markdown"
-      - label: "1-2-1 Therapy Content"
+      - label: "One To One Therapy Content"
         name: "oneToOneTherapyContent"
         file: "src/_data/oneToOneTherapyIntroText.yaml"  # Path to the YAML file
         fields:
-          - label: "1-2-1 Therapy Intro Text"
+          - label: "One To One Therapy Intro Text"
             name: "oneToOneTherapyIntroText"
             widget: "markdown"
       - label: "Breathwork and Meditation Content"
@@ -230,7 +230,7 @@ collections:
             hint: "*Used in search engines (between 70 and 155 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
             pattern: ['^.{70,155}$', "Must be between 70 and 155 characters"]
           }
-      - label: "1-2-1 Therapy"
+      - label: "One To One Therapy"
         name: "oneToOneTherapy"
         file: "src/_data/oneToOneTherapySeo.yaml"
         fields:
@@ -311,7 +311,7 @@ collections:
         file: "src/_data/coursesAndEventsHero.yaml"
         fields:
           - { label: Sub title, name: subTitle, widget: string }
-      - label: "1-2-1 Therapy Hero"
+      - label: "One To One Therapy Hero"
         name: "oneToOneTherapyHero"
         file: "src/_data/oneToOneTherapyHero.yaml"
         fields:
