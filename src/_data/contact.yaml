@@ -1,10 +1,13 @@
 title: How to contact me
-content: You can contact me by email, or through my social media channels. Whether you have a question, need support, or want to book a session, I'm here to help. Just choose the method that works best for you, and I'll get back to you as soon as possible.
+content: You can contact me by email, or through my social media channels.
+  Whether you have a question, need support, or want to book a session, I'm here
+  to help. Just choose the method that works best for you, and I'll get back to
+  you as soon as possible.
 linkHref: /about/
 linkText: Find out more about Giselle
-image: /_includes/static/img/temp-delete/17.jpg
+image: /_includes/static/img/how-to-contact-me-17.avif
 imageAlt: Woman breathing in nature
-imageWidth: 600
-imageHeight: 600
+imageWidth: 1000
+imageHeight: 1000
 isImageRounded: false
 imagePosition: left
