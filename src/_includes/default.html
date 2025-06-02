@@ -117,5 +117,18 @@
       {{ menuScroll | jsmin | safe }}
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+    <script>
+      const glideMulti = new Glide('.multi', {
+        type: 'slider',
+        autoplay: 12000,
+        focusAt: 'center',
+        perView: 1
+      });
+
+      glideMulti.mount();
+    </script>
+
   </body>
 </html>

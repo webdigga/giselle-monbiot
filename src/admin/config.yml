@@ -545,3 +545,15 @@ collections:
             name: "imagePosition"
             options: ["left", "right"]
             default: "left"
+      - label: "Testimonials"
+        name: "testimonials"
+        file: "src/_data/testimonials.yaml"
+        fields:
+          - label: Testimonial Items
+            name: testimonialItems
+            widget: list
+            collapsed: false
+            allow_add: false
+            fields:
+              - { label: Quote, name: quote, widget: string }
+              - { label: Name, name: name, widget: string }

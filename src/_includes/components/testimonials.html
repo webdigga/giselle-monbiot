@@ -1,0 +1,91 @@
+{% if testimonials.testimonialItems %}
+  <section class="bg-[color:var(--dark-copy)] section-divider-top">
+    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+        <div class="glide multi">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              
+              {% for item in testimonials.testimonialItems %}
+                <li class="glide__slide">
+                  <figure class="md:max-w-4xl mx-auto">
+                    <svg class="h-12 mx-auto mb-3 subtle-text-on-dark-background" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                    </svg> 
+                    <blockquote>
+                      <p class="text-lg lg:text-xl font-medium text-white">
+                        "{{ item.quote | safe  }}"
+                      </p>
+                    </blockquote>
+                    <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                        width="24px"
+                        height="24px">
+                        <title>Profile Icon</title>
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                        />
+                      </svg>
+
+                      
+                      <div class="flex items-center divide-x-2 divide-gray-500">
+                        <div class="pr-3 font-medium text-white">{{ item.name | safe  }}</div>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </li>
+              {% endfor %}  
+            
+            </ul>
+          </div>
+
+          <div class="glide__arrows mt-8" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--prev xl:absolute xl:top-1/2 xl:left-0" data-glide-dir="<">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-10 hover:opacity-70"
+                width="40px"
+                height="40px">
+                <title>Previous Testimonial</title>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>            
+            </button>
+
+            <button class="glide__arrow glide__arrow--next xl:absolute xl:top-1/2 xl:right-0" data-glide-dir=">">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-10 hover:opacity-70"
+                width="40px"
+                height="40px">
+                <title>Next Testimonial</title>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>            
+            </button>
+          </div>
+        </div>
+    </div>
+  </section>
+{% endif %}
