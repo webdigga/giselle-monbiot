@@ -338,14 +338,14 @@ collections:
             name: "imageWidth", 
             widget: "number", 
             default: 0, 
-            hint: "Recommended width is 600px" 
+            hint: "Recommended width is 400px"
           }
           - { 
             label: "Image Height", 
             name: "imageHeight", 
             widget: "number", 
             default: 0, 
-            hint: "Recommended height is 450px" 
+            hint: "Recommended height is 400px" 
           }
           - { label: "Is Image Rounded?", name: "isImageRounded", widget: "boolean", default: false }
           - widget: select
@@ -370,14 +370,14 @@ collections:
             name: "imageWidth", 
             widget: "number", 
             default: 0, 
-            hint: "Recommended width is 600px" 
+            hint: "Recommended width is 400px" 
           }
           - { 
             label: "Image Height", 
             name: "imageHeight", 
             widget: "number", 
             default: 0, 
-            hint: "Recommended height is 450px" 
+            hint: "Recommended height is 400px"
           }
           - { label: "Is Image Rounded?", name: "isImageRounded", widget: "boolean", default: false }
           - widget: select
@@ -402,14 +402,14 @@ collections:
             name: "imageWidth", 
             widget: "number", 
             default: 0, 
-            hint: "Recommended width is 600px" 
+            hint: "Recommended width is 400px" 
           }
           - { 
             label: "Image Height", 
             name: "imageHeight", 
             widget: "number", 
             default: 0, 
-            hint: "Recommended height is 450px" 
+            hint: "Recommended height is 400px"
           }
           - { label: "Is Image Rounded?", name: "isImageRounded", widget: "boolean", default: false }
           - widget: select
@@ -434,14 +434,14 @@ collections:
             name: "imageWidth", 
             widget: "number", 
             default: 0, 
-            hint: "Recommended width is 600px" 
+            hint: "Recommended width is 400px" 
           }
           - { 
             label: "Image Height", 
             name: "imageHeight", 
             widget: "number", 
             default: 0, 
-            hint: "Recommended height is 450px" 
+            hint: "Recommended height is 400px"
           }
           - { label: "Is Image Rounded?", name: "isImageRounded", widget: "boolean", default: false }
           - widget: select
@@ -466,14 +466,14 @@ collections:
             name: "imageWidth", 
             widget: "number", 
             default: 0, 
-            hint: "Recommended width is 600px" 
+            hint: "Recommended width is 400px"
           }
           - { 
             label: "Image Height", 
             name: "imageHeight", 
             widget: "number", 
             default: 0, 
-            hint: "Recommended height is 450px" 
+            hint: "Recommended height is 400px"
           }
           - { label: "Is Image Rounded?", name: "isImageRounded", widget: "boolean", default: false }
           - widget: select
@@ -498,14 +498,14 @@ collections:
             name: "imageWidth", 
             widget: "number", 
             default: 0, 
-            hint: "Recommended width is 600px" 
+            hint: "Recommended width is 400px"
           }
           - { 
             label: "Image Height", 
             name: "imageHeight", 
             widget: "number", 
             default: 0, 
-            hint: "Recommended height is 450px" 
+            hint: "Recommended height is 400px"
           }
           - { label: "Is Image Rounded?", name: "isImageRounded", widget: "boolean", default: false }
           - widget: select
@@ -530,14 +530,14 @@ collections:
             name: "imageWidth", 
             widget: "number", 
             default: 0, 
-            hint: "Recommended width is 600px" 
+            hint: "Recommended width is 400px"
           }
           - { 
             label: "Image Height", 
             name: "imageHeight", 
             widget: "number", 
             default: 0, 
-            hint: "Recommended height is 450px" 
+            hint: "Recommended height is 400px"
           }
           - { label: "Is Image Rounded?", name: "isImageRounded", widget: "boolean", default: false }
           - widget: select
