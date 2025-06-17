@@ -5,21 +5,22 @@ firstLevelItems:
     secondLevelItems:
       - text: One To One Therapy
         url: /one-to-one-therapy/
-      - text: Book your Free Introductory Call
-        url: /contact/#contact
-      - text: FAQs
-        url: /frequently-asked-questions-faqs/
-  - text: Discover
-    url: /discover/
-    showInFooter: false
-    secondLevelItems:
       - text: Courses & Events
         url: /courses-and-events/
       - text: Breathwork
         url: /breathwork/
+      - text: Book your Free Introductory Call
+        url: /contact/#contact
   - text: About
-    url: /about-giselle-monbiot-integrative-therapist-and-breathwork-facilitator/
-    showInFooter: true
+    url: /about/
+    showInFooter: false
+    secondLevelItems:
+      - text: Giselle Monbiot
+        url: /about-giselle-monbiot-integrative-therapist-and-breathwork-facilitator/
+      - text: FAQs
+        url: /frequently-asked-questions-faqs/
+      - text: Pricing
+        url: /therapy-and-coaching-prices-with-giselle-monbiot/
   - text: News
     url: /news/
     showInFooter: true
