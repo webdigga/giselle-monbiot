@@ -33,7 +33,7 @@ collections:
     files:
       - label: "Homepage Content"
         name: "homepage"
-        file: "src/_data/seoIntroText.yaml"  # Path to the YAML file
+        file: "src/_data/seoIntroText.yaml"
         fields:
           - label: "SEO Intro Text"
             name: "seoIntroText"
@@ -46,24 +46,31 @@ collections:
                 field: { label: "Paragraph", name: "paragraph", widget: "text" }
       - label: "Courses and Events Content"
         name: "coursesAndEventsContent"
-        file: "src/_data/coursesAndEventsIntroText.yaml"  # Path to the YAML file
+        file: "src/_data/coursesAndEventsIntroText.yaml"
         fields:
           - label: "Courses and Events Intro Text"
             name: "coursesAndEventsIntroText"
             widget: "markdown"
       - label: "One To One Therapy Content"
         name: "oneToOneTherapyContent"
-        file: "src/_data/oneToOneTherapyIntroText.yaml"  # Path to the YAML file
+        file: "src/_data/oneToOneTherapyIntroText.yaml"
         fields:
           - label: "One To One Therapy Intro Text"
             name: "oneToOneTherapyIntroText"
             widget: "markdown"
       - label: "Breathwork and Meditation Content"
         name: "breathworkAndMeditationContent"
-        file: "src/_data/breathworkAndMeditationIntroText.yaml"  # Path to the YAML file
+        file: "src/_data/breathworkAndMeditationIntroText.yaml"
         fields:
           - label: "Breathwork and Meditation Intro Text"
             name: "breathworkAndMeditationIntroText"
+            widget: "markdown"
+      - label: "Workplace Wellbeing Content"
+        name: "workplaceWellbeingContent"
+        file: "src/_data/workplaceWellbeingIntroText.yaml"  # Path to the YAML file
+        fields:
+          - label: "Workplace Wellbeing Intro Text"
+            name: "workplaceWellbeingIntroText"
             widget: "markdown"
   - label: "Article"
     name: "articles"
@@ -280,6 +287,31 @@ collections:
             hint: "*Used in search engines (between 70 and 155 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
             pattern: ['^.{70,155}$', "Must be between 70 and 155 characters"]
           }
+      - label: "Workplace Wellbeing"
+        name: "workplaceWellbeing"
+        file: "src/_data/workplaceWellbeingSeo.yaml"
+        fields:
+          - {
+            label: "Title",
+            name: "title",
+            widget: "string",
+            hint: "*This title will be used in the page's H1 tag, and also determines the URL (between 20 and 70 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
+            pattern: ['^.{20,70}$', "Must be between 20 and 70 characters"]
+          }
+          - { 
+            label: "SEO Title",
+            name: "seoTitle",
+            widget: "string",
+            hint: "*This title will be used in the title tag for search engines (between 50 and 60 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
+            pattern: ['^.{50,60}$', "Must be between 50 and 60 characters"]
+          }
+          - {
+            label: "Description",
+            name: "description",
+            widget: "string",
+            hint: "*Used in search engines (between 70 and 155 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
+            pattern: ['^.{70,155}$', "Must be between 70 and 155 characters"]
+          }
   - label: "Components"
     name: "components"
     files:
@@ -316,9 +348,14 @@ collections:
         file: "src/_data/oneToOneTherapyHero.yaml"
         fields:
           - { label: Sub title, name: subTitle, widget: string }
-      - label: "Breatwork and Meditation Hero"
+      - label: "Breathwork and Meditation Hero"
         name: "breathworkAndMeditationHero"
         file: "src/_data/breathworkAndMeditationHero.yaml"
+        fields:
+          - { label: Sub title, name: subTitle, widget: string }
+      - label: "Workplace Wellbeing Hero"
+        name: "workplaceWellbeingHero"
+        file: "src/_data/workplaceWellbeingHero.yaml"
         fields:
           - { label: Sub title, name: subTitle, widget: string }  
       - label: "One to One Therapy"

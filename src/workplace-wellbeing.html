@@ -1,0 +1,33 @@
+---
+layout: default
+path: home
+type: home
+ogType: website
+eleventyComputed:
+  description: "{{ workplaceWellbeingSeo.description }}"
+  seoTitle: "{{ workplaceWellbeingSeo.seoTitle }}"
+  canonical: "{{ env.site }}/workplace-wellbeing/"
+---
+
+{% import "./_includes/partials/navbar.html" as navBar with context %}
+{% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
+{% import "./_includes/components/hero.html" as hero with context %}
+
+{{ navBar.nav(bgColour='bg-white') }}
+
+<div>
+
+  <section class="min-h-[calc(100dvh-var(--nav-height))] flex flex-col border-b-4 border-b-[color:var(--primary-colour)] border-solid background-image-class background-image-class--workplace-wellbeing">
+  
+    <div class="container content-center grow">      
+      {{ hero.heroComponent(scope=workplaceWellbeingHero, seo=workplaceWellbeingSeo) }}
+    </div>
+  
+    {{ moreButton.button() }}
+  </section>
+
+  <section class="dark-copy" data-test="moreButtonLocation">
+    <div class="container container--large prose">{{ workplaceWellbeingIntroText.workplaceWellbeingIntroText | markdownify | safe }}</div>
+  </section>
+
+</div>
