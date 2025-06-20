@@ -7,8 +7,8 @@ description: "A journey into the felt relationship between inner masculine and
 imageForSeo: /_includes/static/img/harmony-within-189.jpg
 imageAlt: Giselle ovewrseeing deep relaxation
 type: Courses and Event
-start_date: 2025-12-06T13:28:00.000Z
-end_date: 2025-12-06T20:48:00.000Z
+start_date: 2025-12-06T10:00:00.000Z
+end_date: 2025-12-06T18:00:00.000Z
 location: Guildford Institute
 price: £120 Early bird £90 until…
 bookingLink: https://bookme.name/gisellemonbiot/harmony-within-integrating-the-divine-masculine-and-feminine-through-breath-body-and-soul

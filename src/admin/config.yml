@@ -612,6 +612,38 @@ collections:
             name: "imagePosition"
             options: ["left", "right"]
             default: "left"
+      - label: "Workplace Wellbeing"
+        name: "workplaceWellbeing"
+        file: "src/_data/workplaceWellbeing.yaml"
+        fields:
+          - { label: "H2 Title", name: "title", widget: "string" }
+          - label: "Content"
+            name: "content"
+            widget: "markdown"
+          - { label: "Link Href", name: "linkHref", widget: "string" }
+          - { label: "Link Text", name: "linkText", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Image Alt", name: "imageAlt", widget: "string" }
+          - { 
+            label: "Image Width", 
+            name: "imageWidth", 
+            widget: "number", 
+            default: 0, 
+            hint: "Recommended width is 400px" 
+          }
+          - { 
+            label: "Image Height", 
+            name: "imageHeight", 
+            widget: "number", 
+            default: 0, 
+            hint: "Recommended height is 400px"
+          }
+          - { label: "Is Image Rounded?", name: "isImageRounded", widget: "boolean", default: false }
+          - widget: select
+            label: "Image Position"
+            name: "imagePosition"
+            options: ["left", "right"]
+            default: "left"
       - label: "Testimonials"
         name: "testimonials"
         file: "src/_data/testimonials.yaml"

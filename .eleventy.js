@@ -49,6 +49,13 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  // Human readable time
+  eleventyConfig.addFilter("readableTime", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+      "HH:mm"
+    );
+  });
+
   // Make a ISO 8601 date here for the schema data
   eleventyConfig.addFilter("iso8601", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toISO(

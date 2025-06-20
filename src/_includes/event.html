@@ -17,11 +17,25 @@ eleventyComputed:
     <h1 class="dark-copy">{{ title }}</h1>
     
     {% if start_date and end_date %}
+      {% set startDateReadable = start_date | readableDate %}
+      {% set endDateReadable = end_date | readableDate %}
+      {% set startTimeReadable = start_date | readableTime %}
+      {% set endTimeReadable = end_date | readableTime %}
+      {% if startDateReadable == endDateReadable %}
       <p>
-        <time class="text-[color:var(--dark-gray)] text-lg italic block">{{ start_date | readableDate }} - {{ end_date | readableDate }}</time>
+        <time class="text-[color:var(--dark-gray)] text-lg italic block">
+        {{ startDateReadable }}, {{ startTimeReadable }} - {{ endTimeReadable }}
+        </time>
       </p>
+      {% else %}
+      <p>
+        <time class="text-[color:var(--dark-gray)] text-lg italic block">
+        {{ startDateReadable }} {{ startTimeReadable }} - {{ endDateReadable }} {{ endTimeReadable }}
+        </time>
+      </p>
+      {% endif %}
     {% else %}
-      <p class="text-[color:var(--dark-gray)] text-lg italic block">Last Friday of every month</p>
+      <p class="text-[color:var(--dark-gray)] text-lg italic block">Last Friday of every month. Duration: 1.5hrs</p>
     {% endif %}
   
     <p class="mb-1 text-lg"><strong>Location:</strong> {{ location }}</p>

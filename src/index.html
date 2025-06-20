@@ -54,6 +54,14 @@ eleventyComputed:
     {{ section.sectionComponent(scope=events, buttonType='secondary') }}
   </section>
 
+  <section class="bg-[color:var(--white)] text-[color:var(--dark-copy)]">
+    {{ section.sectionComponent(scope=workplaceWellbeing, buttonType='primnary') }}
+  </section>
+
+  <section class="bg-[color:var(--tertiary-colour)] text-[color:var(--white)]">
+    {{ newsletterSignup.newsletterSignupComponent(imagePosition='left') }}
+  </section>
+
   <section class="dark-copy container container--medium flex flex-col justify-center mx-auto">
 
     <h2>Latest News</h2>
@@ -93,10 +101,6 @@ eleventyComputed:
       {% endfor %}
   
     </div>
-  </section>
-
-  <section class="bg-[color:var(--tertiary-colour)] text-[color:var(--white)]">
-    {{ newsletterSignup.newsletterSignupComponent(imagePosition='left') }}
   </section>
 
 </div>
