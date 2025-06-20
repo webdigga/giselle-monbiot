@@ -23,7 +23,18 @@
             <p class="mb-1"><strong>Location:</strong> {{ event.data.location }}</p>
             <p class="mb-1"><strong>Price:</strong> {{ event.data.price }}</p>
             <p class="mt-2">{{ event.data.description }}</p>
-            <a href="/contact/#contact" class="underline">Find out more about {{ event.data.title }}</a>
+
+            <div class="flex justify-between">
+              <a href="/{{ event.data.title | slugify }}/" class="underline">Find out more about {{ event.data.title }}</a>
+              <a
+                href="{{ event.data.bookingLink }}"
+                class="underline"
+                target="_blank"
+                rel="noopener noreferrer">
+                Book now
+              </a>
+            </div>
+
           </div>
         {% endif %}
       {% endfor %}
@@ -49,7 +60,18 @@
             <p class="mb-1"><strong>Location:</strong> {{ event.data.location }}</p>
             <p class="mb-1"><strong>Price:</strong> {{ event.data.price }}</p>
             <p class="mt-2">{{ event.data.description }}</p>
-            <a href="/contact/#contact" class="underline">Find out more about {{ event.data.title }}</a>
+            
+            <div class="flex justify-between">
+              <a href="/{{ event.data.title | slugify }}/" class="underline">Find out more about {{ event.data.title }}</a>
+              <a
+                href="{{ event.data.bookingLink }}"
+                class="underline"
+                target="_blank"
+                rel="noopener noreferrer">
+                Book now
+              </a>
+            </div>
+
           </div>
         {% endif %}
       {% endfor %}

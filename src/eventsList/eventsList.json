@@ -1,0 +1,8 @@
+{
+    "layout": "event",
+    "tags": [
+        "event"
+    ],
+    "ogType": "event",
+    "permalink": "/{{ title | slugify }}/"
+}

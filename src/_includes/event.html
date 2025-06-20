@@ -1,0 +1,37 @@
+---
+layout: default
+seoSchemaPageType: Article
+eleventyComputed:
+  canonical: "{{ env.site }}/{{ title | slugify }}/"
+---
+
+{% import "./partials/navbar.html" as navBar with context %}
+{% import "./components/buttons/anchor.html" as anchorButton with context %}
+
+{{ navBar.nav(bgColour='bg-white') }}
+
+<section class="container">
+
+  <article class="my-6 flex flex-col md:block prose max-w-5xl mx-auto">
+
+    <h1 class="dark-copy">{{ title }}</h1>
+    
+    {% if start_date and end_date %}
+      <p>
+        <time class="text-[color:var(--dark-gray)] text-lg italic block">{{ start_date | readableDate }} - {{ end_date | readableDate }}</time>
+      </p>
+    {% else %}
+      <p class="text-[color:var(--dark-gray)] text-lg italic block">Last Friday of every month</p>
+    {% endif %}
+  
+    <p class="mb-1 text-lg"><strong>Location:</strong> {{ location }}</p>
+    <p class="mb-1 text-lg"><strong>Price:</strong> {{ price }}</p>
+    <p class="mt-2 text-lg">{{ description }}</p>
+
+    {{ content | safe }}
+
+    {{ anchorButton.anchor(anchorText='Book Now', destination=bookingLink, isExternal=true, classes='no-underline flex justify-self-end') }}
+
+  </article>
+	
+</section>

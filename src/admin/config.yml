@@ -14,13 +14,43 @@ collections:
     folder: "src/eventsList"
     create: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
+      - {
+        label: "Title",
+        name: "title",
+        widget: "string",
+        hint: "*This title will be used in the page's H1 tag, and also determines the URL (between 20 and 70 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
+      }
+      - { 
+        label: "SEO Title",
+        name: "seoTitle",
+        widget: "string",
+        hint: "*This title will be used in the title tag for search engines (between 50 and 60 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
+      }
+      - {
+        label: "Description",
+        name: "description",
+        widget: "string",
+        hint: "*Used in search engines (between 70 and 155 characters). If you want to make changes to this section after the page has been published then it's best to chat to David first.*",
+        pattern: ['^.{70,155}$', "Must be between 70 and 155 characters"]
+      }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+        label: "Image for SEO (Twitter cards and OG), must be jpg",
+        name: "imageForSeo",
+        widget: "image",
+        hint: "*This is required, just use any image that you have used in the main body of the event (Use 1.91:1 ratio, e.g. 1200 x 628)"
+      }
+      - {
+        label: "Image Alt",
+        name: "imageAlt",
+        widget: "string"
+      }
       - { label: "Type", name: "type", widget: "select", options: ["Courses and Event", "Retreat"] }
-      - { label: "Start Date", name: "start_date", widget: "datetime" }
-      - { label: "End Date", name: "end_date", widget: "datetime" }
+      - { label: "Start Date", name: "start_date", widget: "datetime", required: false }
+      - { label: "End Date", name: "end_date", widget: "datetime", required: false }
       - { label: "Location", name: "location", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
       - { label: "Price", name: "price", widget: "string" }
+      - { label: "Booking Link", name: "bookingLink", widget: "string" }
       - widget: select
         label: "tags"
         name: "tags"
