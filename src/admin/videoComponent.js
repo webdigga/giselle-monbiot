@@ -28,7 +28,7 @@ CMS.registerEditorComponent({
   pattern: /^<div class="youtube-embed (.*?)">[\s\S]*<\/div>$/,
   fromBlock: function(match) {
     const urlMatch = match[0].match(/src="(.*?)"/);
-    const captionMatch = match[0].match(/<h5 class="text-lg mb-4 font-bold">(.*?)<\/h5>/);
+    const captionMatch = match[0].match(/<h2 class="text-lg mb-4 font-bold">(.*?)<\/h5>/);
     const floatMatch = match[0].match(/youtube-embed (Left|Right)/); // Capture float class
 
     return {
@@ -39,13 +39,13 @@ CMS.registerEditorComponent({
   },
   toBlock: function(obj) {
     const videoUrl = obj.url.replace("watch?v=", "embed/").split("&")[0]; // Clean up the URL
-    const captionHtml = obj.caption ? `<h5 class="text-lg mb-4 font-bold">${obj.caption}</h5>` : '';
+    const captionHtml = obj.caption ? `<h2 class="text-lg mb-4 font-bold">${obj.caption}</h5>` : '';
     const floatClass = obj.float ? obj.float : ''; // Set float class
 
     return `
 <div class="youtube-embed ${floatClass}">
   ${captionHtml}
-  <iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen class="max-w-full"></iframe>
+  <iframe title="${obj.caption}" width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen class="max-w-full"></iframe>
 </div>`;
   },
   toPreview: function(obj) {
@@ -54,7 +54,7 @@ CMS.registerEditorComponent({
 
     return `
 ${captionMarkdown}
-<iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen class="max-w-full"></iframe>
+<iframe title="${obj.caption}" width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen class="max-w-full"></iframe>
     `;
   }
 });

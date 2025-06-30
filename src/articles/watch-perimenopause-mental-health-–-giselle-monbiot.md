@@ -18,6 +18,6 @@ In this powerful and heartfelt conversation, therapist and breathwork facilitato
 
 
 <div class="youtube-embed ">
-  <h5 class="text-lg mb-4 font-bold">Perimenopause & Mental Health</h5>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/QKRSzxuHX4U" frameborder="0" allowfullscreen class="max-w-full"></iframe>
+  <h2 class="text-lg mb-4 font-bold">Perimenopause & Mental Health</h5>
+  <iframe title="Perimenopause & Mental Health" width="560" height="315" src="https://www.youtube.com/embed/QKRSzxuHX4U" frameborder="0" allowfullscreen class="max-w-full"></iframe>
 </div>
