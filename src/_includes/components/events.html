@@ -19,7 +19,29 @@
         {% if event.data.type == "Courses and Event" %}
           <div class="bg-[color:var(--quaternary-colour)] border-l-4 border-[color:var(--secondary-colour)] p-6 ">
             <h3 class="font-semibold mb-2">{{ event.data.title }}</h3>
-            <p>{{ event.data.start_date | readableDate }} - {{ event.data.end_date | readableDate }}</p>
+
+            {% if event.data.start_date and event.data.end_date %}
+              {% set startDateReadable = event.data.start_date | readableDate %}
+              {% set endDateReadable = event.data.end_date | readableDate %}
+              {% set startTimeReadable = event.data.start_date | readableTime %}
+              {% set endTimeReadable = event.data.end_date | readableTime %}
+              {% if startDateReadable == endDateReadable %}
+              <p>
+                <time>
+                {{ startDateReadable }}, {{ startTimeReadable }} - {{ endTimeReadable }}
+                </time>
+              </p>
+              {% else %}
+              <p>
+                <time>
+                {{ startDateReadable }} {{ startTimeReadable }} - {{ endDateReadable }} {{ endTimeReadable }}
+                </time>
+              </p>
+              {% endif %}
+            {% else %}
+              <p>Last Friday of every month. Duration: 1.5hrs. 7.15-9pm</p>
+            {% endif %}
+
             <p class="mb-1"><strong>Location:</strong> {{ event.data.location }}</p>
             <p class="mb-1"><strong>Price:</strong> {{ event.data.price }}</p>
             <p class="mt-2">{{ event.data.description }}</p>

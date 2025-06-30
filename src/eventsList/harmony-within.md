@@ -1,5 +1,6 @@
 ---
 title: Harmony Within
+subTitle: Integrating the Divine Masculine and Feminine Through Breath, Body & Soul
 seoTitle: Harmony Within | Giselle Monbiot
 description: "A journey into the felt relationship between inner masculine and
   feminine, through breath, body and soul work, moving beyond balance to
@@ -8,14 +9,12 @@ imageForSeo: /_includes/static/img/harmony-within-189.jpg
 imageAlt: Giselle ovewrseeing deep relaxation
 type: Courses and Event
 start_date: 2025-12-06T10:00:00.000Z
-end_date: 2025-12-06T18:00:00.000Z
+end_date: 2025-12-06T16:30:00.000Z
 location: Guildford Institute
 price: £120 Early bird £90 until…
-bookingLink: https://bookme.name/gisellemonbiot/harmony-within-integrating-the-divine-masculine-and-feminine-through-breath-body-and-soul
+bookingLink: https://bookme.name/gisellemonbiot/lite/harmony-within-integrating-the-divine-masculine-and-feminine-through-breath-body-and-soul
 tags: event
 ---
-***Integrating the Divine Masculine and Feminine Through Breath, Body & Soul***
-
 **A One-Day Immersive Workshop**
 Facilitated by Giselle Monbiot & Oliver Baum
 
@@ -68,6 +67,10 @@ This is about coming home to a deeper centre. One that is responsive, not reacti
 **Oliver Baum** a Psychotherapist, Spiritual Mentor and Systemic Facilitator with extensive experience. Oliver’s natural curiosity has led to the study of a diverse range of therapeutic models, philosophies and spiritual practices.
 
 Together, we offer a sacred space for your process  held with integrity, depth, and kindness.
+
+<img src="/_includes/static/img/giselle-91.avif" alt="Giselle Monbiot" title="Giselle Monbiot" class="Left" width="600px" height="450px" loading="lazy"/>
+
+<img src="/_includes/static/img/oliver-baum.avif" alt="Oliver Baum" title="Oliver Baum" class="Right" width="600px" height="450px" loading="lazy"/>
 
 **✧ Book Your Place**
 
