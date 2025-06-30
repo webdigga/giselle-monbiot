@@ -39,7 +39,7 @@
               </p>
               {% endif %}
             {% else %}
-              <p>Last Friday of every month. Duration: 1.5hrs. 7.15-9pm</p>
+              <p>{{ event.data.repeatingDate }}</p>
             {% endif %}
 
             <p class="mb-1"><strong>Location:</strong> {{ event.data.location }}</p>
@@ -47,12 +47,17 @@
             <p class="mt-2">{{ event.data.description }}</p>
 
             <div class="flex justify-between">
-              <a href="/{{ event.data.title | slugify }}/" class="underline">Find out more about {{ event.data.title }}</a>
+              {% if event.data.showMoreDetails %}
+                <a href="/{{ event.data.title | slugify }}/" class="underline">Find out more about {{ event.data.title }}</a>
+              {% endif %}
               <a
                 href="{{ event.data.bookingLink }}"
                 class="underline"
-                target="_blank"
-                rel="noopener noreferrer">
+                {% if event.data.bookingLinkExternal == true %}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                {% endif %}
+                >
                 Book now
               </a>
             </div>

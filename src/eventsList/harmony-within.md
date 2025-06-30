@@ -13,6 +13,8 @@ end_date: 2025-12-06T16:30:00.000Z
 location: Guildford Institute
 price: £120 Early bird £90 until…
 bookingLink: https://bookme.name/gisellemonbiot/lite/harmony-within-integrating-the-divine-masculine-and-feminine-through-breath-body-and-soul
+bookingLinkExternal: true
+showMoreDetails: true
 tags: event
 ---
 **A One-Day Immersive Workshop**

@@ -37,7 +37,7 @@ eleventyComputed:
       </p>
       {% endif %}
     {% else %}
-      <p class="text-[color:var(--dark-gray)] text-lg italic block">Last Friday of every month. Duration: 1.5hrs. 7.15-9pm</p>
+      <p class="text-[color:var(--dark-gray)] text-lg italic block">{{ repeatingDate }}</p>
     {% endif %}
   
     <p class="mb-1 text-lg"><strong>Location:</strong> {{ location }}</p>
@@ -46,7 +46,7 @@ eleventyComputed:
 
     {{ content | safe }}
 
-    {{ anchorButton.anchor(anchorText='Book Now', destination=bookingLink, isExternal=true, classes='no-underline flex justify-self-end') }}
+    {{ anchorButton.anchor(anchorText='Book Now', destination=bookingLink, isExternal=bookingLinkExternal, classes='no-underline flex justify-self-end') }}
 
   </article>
 	

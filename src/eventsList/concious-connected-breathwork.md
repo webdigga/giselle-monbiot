@@ -8,9 +8,12 @@ imageAlt: Giselle ovewrseeing deep relaxation
 type: Courses and Event
 start_date: ""
 end_date: ""
+repeatingDate: "Last Friday of every month. Duration: 1.5hrs. 7.15-9pm"
 location: Kingston Quaker Centre, Fairfield, Kingston upon Thames, KT1 2PT
 price: £30
 bookingLink: https://bookme.name/gisellemonbiot/monthly-breathwork-circles
+bookingLinkExternal: true
+showMoreDetails: true
 tags: event
 ---
 ## What is Conscious Connected Breathwork?
