@@ -55,7 +55,7 @@ As a trauma-informed therapist, I cultivate a welcoming, safe space where healin
 
 ## How to Book
 
-Click the button below to book. You can also follow on Instagram at [@giselle.monbiot](<>) for announcements.[](#)
+Click the button below to book. You can also follow on Instagram at <a href="https://www.instagram.com/giselle.monbiot" target="_blank" rel="nofollow">@giselle.monbiot</a> for announcements.
 
 - - -
 
