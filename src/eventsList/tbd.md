@@ -1,18 +1,17 @@
 ---
 title: TBD
 seoTitle: TBD | Giselle Monbiot
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-  pretium lorem aliquet turpis pellentesque maximus. Pellentesque at erat
-  euismod, semper
+description: Event details coming soon - we're putting the finishing touches
+  together. Full info will be added in July, so check back then.
 imageForSeo: /_includes/static/img/breathwork-114.avif
 imageAlt: Giselle at work
 type: Courses and Event
 start_date: 2025-10-18T13:00:00.000Z
 end_date: 2025-10-18T18:00:00.000Z
 location: Kingston Quaker Centre
-price: TBD
+price: TBA
 bookingLink: /contact/#contact
 bookingLinkExternal: false
 tags: event
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem aliquet turpis pellentesque maximus. Pellentesque at erat euismod, semper
+Details to come in July.....

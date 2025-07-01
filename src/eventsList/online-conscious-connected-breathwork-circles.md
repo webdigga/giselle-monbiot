@@ -6,9 +6,9 @@ description: Explore Conscious Connected Breathwork to release emotional blocks,
 imageForSeo: /_includes/static/img/events-149.avif
 imageAlt: Giselle Monbiot event
 type: Courses and Event
-location: TBD
-price: "30"
-bookingLink: TBD
+location: Online
+price: £30
+bookingLink: /contact/#contact
 bookingLinkExternal: false
 showMoreDetails: false
 tags: event

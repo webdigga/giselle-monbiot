@@ -58,7 +58,11 @@
                   rel="noopener noreferrer"
                 {% endif %}
                 >
-                Book now
+                {% if event.data.bookingLinkExternal == true %}
+                  Book now
+                {% else %}
+                  Enquire now
+                {% endif %}
               </a>
             </div>
 
