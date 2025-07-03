@@ -1,6 +1,6 @@
 ---
-title: TBD
-seoTitle: TBD | Giselle Monbiot
+title: Transformation Day Retreat
+seoTitle: Transformation Day Retreat | Giselle Monbiot
 description: Event details coming soon - we're putting the finishing touches
   together. Full info will be added in July, so check back then.
 imageForSeo: /_includes/static/img/breathwork-114.avif
