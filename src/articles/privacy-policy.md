@@ -1,7 +1,7 @@
 ---
 title: Privacy policy
 seoTitle: Privacy policy | Giselle Monbiot
-description: Cookie consent
+description: We use Google Analytics with anonymised IPs to track site visits. No personal data is collected, and cookies help remember visitors between sessions.
 author: David White
 date: 2024-02-29T17:13:10.382Z
 type: privacy

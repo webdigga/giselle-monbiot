@@ -1,6 +1,6 @@
 ---
 title: About Giselle Monbiot - Integrative Therapist & Breathwork Facilitator
-seoTitle: Integrative Therapist and Breathwork Facilitator in Kingston | Giselle Monbiot
+seoTitle: Integrative Therapist and Breathwork Coach | Giselle Monbiot
 description: Giselle Monbiot offers Integrative Therapy and Breathwork in
   Kingston, London. Heal through connection to self, nature, spirit and
   community.

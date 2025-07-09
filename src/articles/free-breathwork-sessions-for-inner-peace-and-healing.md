@@ -1,6 +1,6 @@
 ---
 title: Free Breathwork Sessions for Inner Peace and Healing
-seoTitle: Free Breathwork Sessions for Inner Peace and Healing | Giselle Monbiot
+seoTitle: Free Breathwork for Peace and Healing | Giselle Monbiot
 description: Join free online breathwork sessions for relaxation, clarity, and
   healing. Limited spots available—experience deep calm and balance today!
 author: David White

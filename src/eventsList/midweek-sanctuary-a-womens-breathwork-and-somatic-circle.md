@@ -1,7 +1,7 @@
 ---
 title: "Midweek Sanctuary: A Women's Breathwork and Somatic Circle"
 subTitle: A journey into calm, clarity and connection
-seoTitle: "Midweek Sanctuary: A Women's Breathwork and Somatic Circle | Giselle Monbiot"
+seoTitle: Women’s Breathwork and Somatic Circle | Giselle Monbiot
 description: A weekly women's breathwork and somatic circle in Kingston – a
   calming, candlelit space to release, reconnect and restore. Wednesdays
   7–8:30pm

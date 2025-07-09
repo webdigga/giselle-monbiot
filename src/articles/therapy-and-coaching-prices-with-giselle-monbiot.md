@@ -1,6 +1,6 @@
 ---
 title: Therapy and Coaching Prices with Giselle Monbiot
-seoTitle: Therapy and Coaching Prices with Giselle Monbiot | Stress Management Kingston
+seoTitle: Therapy and Coaching Prices | Giselle Monbiot
 description: Discover competitive pricing for wellbeing therapy and workshops
   with Giselle Monbiot. Transform your mental health with science-led approaches
   in Kingston

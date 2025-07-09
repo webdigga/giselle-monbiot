@@ -1,6 +1,6 @@
 ---
 title: Release Tension To The Earth Meditation Session
-seoTitle: Release Tension To The Earth Meditation Session | Giselle Monbiot
+seoTitle: Release Tension Meditation Session | Giselle Monbiot
 description: Explore guided meditations, stress relief techniques, and business
   resilience insights. Listen, download, and enhance your well-being today.
 author: David White
