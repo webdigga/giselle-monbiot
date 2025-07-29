@@ -42,18 +42,14 @@ module.exports = function (eleventyConfig) {
   // Merge data instead of overriding
   eleventyConfig.setDataDeepMerge(true);
 
-  // Human readable date
+  // Human readable date (UK timezone)
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLL yyyy"
-    );
+    return DateTime.fromJSDate(dateObj, { zone: "Europe/London" }).toFormat("dd LLL yyyy");
   });
 
-  // Human readable time
+  // Human readable time (UK timezone)
   eleventyConfig.addFilter("readableTime", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "HH:mm"
-    );
+    return DateTime.fromJSDate(dateObj, { zone: "Europe/London" }).toFormat("HH:mm");
   });
 
   // Make a ISO 8601 date here for the schema data

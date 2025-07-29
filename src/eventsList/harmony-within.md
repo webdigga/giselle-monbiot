@@ -8,7 +8,7 @@ description: "A journey into the felt relationship between inner masculine and
 imageForSeo: /_includes/static/img/harmony-within-189.jpg
 imageAlt: Giselle ovewrseeing deep relaxation
 type: Courses and Event
-start_date: 2025-12-06T10:00:00.000Z
+start_date: 2025-12-06T10:00:00.000+00:00
 end_date: 2025-12-06T16:30:00.000Z
 location: Guildford Institute
 price: £120 Early bird £90 until…
