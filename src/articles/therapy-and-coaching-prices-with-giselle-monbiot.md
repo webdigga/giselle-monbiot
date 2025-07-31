@@ -80,3 +80,5 @@ Ready to start your personal growth journey? Giselle offers a free 15-minute con
 To book your consultation or enquire about specific pricing, [complete the contact form](/contact/#contact) on the website about how her therapeutic approaches can support your journey to better mental health and wellbeing.
 
 Investment in your mental health and wellbeing is one of the most valuable decisions you can make. All pricing reflects the professional expertise, personalised attention, and transformative results that Giselle's clients experience through her comprehensive therapeutic approaches.
+
+*I offer discounts for Breathwork students from the Bedfordshire Centre for Therapeutic Studies. Please [contact me](/contact/#contact) to find out more.*
