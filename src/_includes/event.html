@@ -10,38 +10,64 @@ eleventyComputed:
 
 {{ navBar.nav(bgColour='bg-white') }}
 
+<div class="bg-[color:var(--primary-colour)]">
+  <div class="container">
+    <div class="my-6 grid grid-cols-12 max-w-5xl mx-auto items-center">
+      <div class="col-span-12 lg:col-span-8 content-center">
+        <h1 class="text-[color:var(--white)] mb-3">{{ title }}</h1>
+
+        {% if subTitle %}
+          <h2 class="text-[color:var(--white)] italic mt-0 mb-2">{{ subTitle }}</h2>
+        {% endif %}
+        
+        {% if start_date and end_date %}
+          {% set startDateReadable = start_date | readableDate %}
+          {% set endDateReadable = end_date | readableDate %}
+          {% set startTimeReadable = start_date | readableTime %}
+          {% set endTimeReadable = end_date | readableTime %}
+          {% if startDateReadable == endDateReadable %}
+          <div class="m-0">
+            <strong class="text-[color:var(--white)] text-xl">Date:</strong>
+            <time class="text-[color:var(--white)] text-xl inline">
+            {{ startDateReadable }}, {{ startTimeReadable }} - {{ endTimeReadable }}
+            </time>
+          </div>
+          {% else %}
+          <div class="m-0">
+            <strong class="text-[color:var(--white)] text-xl">Date:</strong>
+            <time class="text-[color:var(--white)] text-xl inline">
+              {{ startDateReadable }} {{ startTimeReadable }} - {{ endDateReadable }} {{ endTimeReadable }}
+            </time>
+          </div>
+          {% endif %}
+        {% else %}        
+          <div class="text-[color:var(--white)] text-xl inline m-0">
+            <strong class="text-[color:var(--white)]">Date:</strong>
+            {{ repeatingDate }}
+          </div>
+        {% endif %}
+
+        <div class="text-xl text-[color:var(--white)] m-0"><strong class="text-[color:var(--white)]">Location:</strong> {{ location }}</div>
+        <div class="text-xl text-[color:var(--white)] m-0"><strong class="text-[color:var(--white)]">Price:</strong> <span class="font-extrabold text-3xl">{{ price }}</span></div>
+      </div>
+    
+      <img
+        src="/_includes/static/img/giselle-monbiot-events.avif"
+        alt="Giselle Monbiot"
+        width="200"
+        height="200"
+        class="rounded-full ml-4 w-[200px] h-[200px] hidden lg:block lg:col-span-4 justify-self-end"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+  </div>
+</div>
+
 <section class="container">
 
   <article class="my-6 flex flex-col md:block prose max-w-5xl mx-auto">
 
-    <h1 class="dark-copy">{{ title }}</h1>
-
-    <h2 class="dark-copy italic">{{ subTitle }}</h2>
-    
-    {% if start_date and end_date %}
-      {% set startDateReadable = start_date | readableDate %}
-      {% set endDateReadable = end_date | readableDate %}
-      {% set startTimeReadable = start_date | readableTime %}
-      {% set endTimeReadable = end_date | readableTime %}
-      {% if startDateReadable == endDateReadable %}
-      <p>
-        <time class="text-[color:var(--dark-gray)] text-lg italic block">
-        {{ startDateReadable }}, {{ startTimeReadable }} - {{ endTimeReadable }}
-        </time>
-      </p>
-      {% else %}
-      <p>
-        <time class="text-[color:var(--dark-gray)] text-lg italic block">
-        {{ startDateReadable }} {{ startTimeReadable }} - {{ endDateReadable }} {{ endTimeReadable }}
-        </time>
-      </p>
-      {% endif %}
-    {% else %}
-      <p class="text-[color:var(--dark-gray)] text-lg italic block">{{ repeatingDate }}</p>
-    {% endif %}
-  
-    <p class="mb-1 text-lg"><strong>Location:</strong> {{ location }}</p>
-    <p class="mb-1 text-lg"><strong>Price:</strong> {{ price }}</p>
     <p class="mt-2 text-lg">{{ description }}</p>
 
     {{ content | safe }}
