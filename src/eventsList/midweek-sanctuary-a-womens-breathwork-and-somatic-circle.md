@@ -10,7 +10,7 @@ imageAlt: Midweek sanctuary
 type: Courses and Event
 repeatingDate: Wednesdays 7pm – 8.30pm
 location: Kingston upon Thames
-price: TBA
+price: SOLD OUT
 bookingLink: /contact/#contact
 showMoreDetails: true
 tags: event
