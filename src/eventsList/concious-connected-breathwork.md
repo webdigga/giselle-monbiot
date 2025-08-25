@@ -1,6 +1,6 @@
 ---
-title: Concious Connected Breathwork (in-person)
-seoTitle: Concious Connected Breathwork | Giselle Monbiot
+title: Conscious Connected Breathwork (in-person)
+seoTitle: Conscious Connected Breathwork | Giselle Monbiot
 description: Explore Conscious Connected Breathwork to release emotional blocks,
   reduce stress, and reconnect with your inner wisdom and vitality.
 imageForSeo: /_includes/static/img/harmony-within-189.jpg
@@ -26,7 +26,7 @@ Conscious Connected Breathwork (CCB) invites you to breathe without gaps or paus
 
 Join a like-minded community each month for an evening of collective release and renewal. Every session offers space to let go, drop into your body, and reconnect with your breath.
 
-These circles take place on the **last Friday of every month at 7:30 pm**.
+These circles take place on the **last Friday of every month at 7:15 pm**.
 
 - - -
 
