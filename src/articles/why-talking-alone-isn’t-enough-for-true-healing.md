@@ -41,6 +41,6 @@ This is the difference between knowing your story and truly transforming it.
 
 Talking helps us bring awareness, but awareness alone doesn’t always bring change. When the body is included in the process, healing becomes a lived experience. It is no longer about simply understanding why you feel the way you do, but about freeing the emotions, patterns and protective responses that have been held inside for years.
 
-This is why I work holistically, weaving together talking therapy, somatic practices, breathwork, movement, healing and nutrition. Each element supports the other, creating a pathway back to wholeness.
+This is why I work holistically, weaving together talking therapy, somatic practices, [breathwork](/breathwork/), movement, healing and nutrition. Each element supports the other, creating a pathway back to wholeness.
 
 Because real healing is not about scratching the surface. It’s about integration. Mind and body, left and right brain, thought and feeling – so that you can live with vibrancy, clarity and authenticity once again.
