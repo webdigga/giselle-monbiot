@@ -34,7 +34,7 @@ This one-day retreat is for women who feel that ache and are ready to explore it
 
 ## What You’ll Experience
 
-This retreat gently blends Compassionate Inquiry, somatic practices, and therapeutic breathwork to help you reconnect with yourself on every level. Mind, body and breath.
+This retreat gently blends Compassionate Inquiry&reg;, somatic practices, and therapeutic breathwork to help you reconnect with yourself on every level. Mind, body and breath.
 
 **Your day will include:**
 

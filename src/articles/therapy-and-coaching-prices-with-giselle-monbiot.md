@@ -17,12 +17,14 @@ Finding the right therapeutic support shouldn't be complicated by unclear pricin
 
 ## One-to-One Integrative Therapy Sessions
 
-Individual blended therapy sessions provide personalised support using a comprehensive skilled approach including Compassionate Inquiry, Advanced EMDR, Breathwork and Somatics techniques. These sessions are tailored to address your specific needs, whether you're dealing with stress, anxiety, trauma, or seeking personal growth.
+Individual blended therapy sessions provide personalised support using a comprehensive skilled approach including Compassionate Inquiry&reg;, Advanced EMDR, Breathwork and Somatics techniques. These sessions are tailored to address your specific needs, whether you're dealing with stress, anxiety, trauma, or seeking personal growth.
 
 * **Single One Hour Session:** £95 
 * **Package of 5 One Hour Sessions:** £450 (save £5 per session)
 
 Following our first session, if you decide to commit to 5 sessions, the first session will be offered at the package price.
+
+*I offer discounts for Breathwork students from the Bedfordshire Centre for Therapeutic Studies. Please [contact me](/contact/#contact) to find out more.*
 
 ## One to One Conscious Connected Breathwork
 
@@ -80,5 +82,3 @@ Ready to start your personal growth journey? Giselle offers a free 15-minute con
 To book your consultation or enquire about specific pricing, [complete the contact form](/contact/#contact) on the website about how her therapeutic approaches can support your journey to better mental health and wellbeing.
 
 Investment in your mental health and wellbeing is one of the most valuable decisions you can make. All pricing reflects the professional expertise, personalised attention, and transformative results that Giselle's clients experience through her comprehensive therapeutic approaches.
-
-*I offer discounts for Breathwork students from the Bedfordshire Centre for Therapeutic Studies. Please [contact me](/contact/#contact) to find out more.*

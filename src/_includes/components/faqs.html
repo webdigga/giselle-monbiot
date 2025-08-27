@@ -3,8 +3,8 @@
   {% if faqsData.faqs %}
     <dl>
       {% for faqsDataItem in faqsData.faqs %}
-        <dt><h2>{{ faqsDataItem.question }}</h2></dt>
-        <dd class="pl-0">{{ faqsDataItem.answer }}</dd>
+        <dt><h2>{{ faqsDataItem.question | safe }}</h2></dt>
+        <dd class="pl-0">{{ faqsDataItem.answer | safe }}</dd>
       {% endfor %}
     </dl>
   {% endif %}

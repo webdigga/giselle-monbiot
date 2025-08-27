@@ -64,7 +64,7 @@ This is about coming home to a deeper centre. One that is responsive, not reacti
 
 **✧ Your Guides**
 
-**Giselle Monbiot** is a breathwork facilitator and Compassionate Inquiry® practitioner devoted to helping others return to their inner truth through body-based healing, conscious breath, and trauma-informed inquiry.
+**Giselle Monbiot** is a breathwork facilitator and Compassionate Inquiry&reg; practitioner devoted to helping others return to their inner truth through body-based healing, conscious breath, and trauma-informed inquiry.
 
 **Oliver Baum** a Psychotherapist, Spiritual Mentor and Systemic Facilitator with extensive experience. Oliver’s natural curiosity has led to the study of a diverse range of therapeutic models, philosophies and spiritual practices.
 
