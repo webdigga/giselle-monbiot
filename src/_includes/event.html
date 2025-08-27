@@ -40,7 +40,7 @@ eleventyComputed:
             </time>
           </div>
           {% endif %}
-        {% else %}        
+        {% elseif repeatingDate %}        
           <div class="text-[color:var(--white)] text-xl inline m-0">
             <strong class="text-[color:var(--white)]">Date:</strong>
             {{ repeatingDate }}
