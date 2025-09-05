@@ -15,7 +15,7 @@ tags:
 ---
 <img src="/_includes/static/img/about-page-85.avif" alt="Giselle Monbiot" title="Giselle Monbiot" class="Right" width="600px" height="450px" loading="lazy"/>
 
-## Integrative Therapist and Breathwork Facilitator
+## Integrative Therapist and Breathwork Facilitator in Kingston upon Thames
 
 Based in the vibrant community of Kingston, London, I guide individuals on their journey toward wholeness through a comprehensive approach to healing and personal development. Embodied wellbeing to connect, heal and thrive. Where inner self, body and breath come together.
 
