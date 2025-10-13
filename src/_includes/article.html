@@ -12,22 +12,52 @@ eleventyComputed:
 
 <section class="container">
 
-  <article class="my-6 flex flex-col md:block prose max-w-5xl mx-auto">
+  <article class="my-10 max-w-4xl mx-auto">
 
-    <h1 class="dark-copy">{{ title }}</h1>
+    <!-- Editorial Header Section -->
+    <header class="mb-12 border-b border-gray-200 pb-8">
+      
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+        {{ title }}
+      </h1>
 
-    {% if showDate and date %}
-      <time class="text-[color:var(--dark-gray)] text-sm italic block">{{ date | readableDate }}</time>
-    {% endif %}
+      {% if showDate and date %}
+      <div class="flex items-center gap-4">
+        <!-- Author Image -->
+        <img 
+          src="/_includes/static/img/giselle-monbiot-blog.avif" 
+          alt="Giselle Monbiot" 
+          class="w-14 h-14 rounded-full object-cover shadow-sm flex-shrink-0"
+        >
+        
+        <!-- Author Info & Meta -->
+        <div class="flex flex-col">
+          <span class="font-medium text-gray-900">Giselle Monbiot</span>
+          <div class="flex items-center gap-2 text-sm text-gray-600">
+            <time datetime="{{ date | iso8601 }}">
+              {{ date | readableDate }}
+            </time>
+            <span>•</span>
+            {% set wordCount = content | striptags | wordcount %}
+            {% set readTime = ((wordCount / 200) | round) or 1 %}
+            <span>{{ readTime }} min read</span>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    </header>
 
-    {{ content | safe }}
+    <!-- Article Content -->
+    <div class="prose prose-lg max-w-none">
+      {{ content | safe }}
+    </div>
 
     {% if 'faq' in tags %}
-          
-      {{ faqs.faqs() }}
-
-    {% endif %} 
+      <div class="mt-12">
+        {{ faqs.faqs() }}
+      </div>
+    {% endif %}
 
   </article>
-	
+
 </section>

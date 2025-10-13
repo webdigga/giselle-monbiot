@@ -151,7 +151,7 @@ img.Right {
 }
 
 .background-image-class--home {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4) ), url('/_includes/static/img/home-91.avif');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('/_includes/static/img/home-91.avif');
   background-position: 50% 10%;
 }
 
