@@ -12,52 +12,106 @@ eleventyComputed:
 
 <section class="container">
 
-  <article class="my-10 max-w-4xl mx-auto">
-
-    <!-- Editorial Header Section -->
-    <header class="mb-12 border-b border-gray-200 pb-8">
+  {% if 'news' in tags %}
+    <!-- NEWS LAYOUT WITH SIDEBAR -->
+    <article class="my-10 grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
       
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-        {{ title }}
-      </h1>
+      <!-- LEFT: MAIN ARTICLE CONTENT -->
+      <div class="lg:col-span-2">
+        <!-- Editorial Header Section -->
+        <header class="mb-12 border-b border-gray-200 pb-8">
+          
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+            {{ title }}
+          </h1>
+
+          {% if date %}
+          <div class="flex items-center gap-4">
+            <!-- Author Image -->
+            <img 
+              src="/_includes/static/img/giselle-monbiot-blog.avif" 
+              alt="Giselle Monbiot" 
+              class="w-14 h-14 rounded-full object-cover shadow-sm flex-shrink-0"
+            >
+            
+            <!-- Author Info & Meta -->
+            <div class="flex flex-col">
+              <span class="font-medium text-gray-900">Giselle Monbiot</span>
+              <div class="flex items-center gap-2 text-sm text-gray-600">
+                <time datetime="{{ date | iso8601 }}">
+                  {{ date | readableDate }}
+                </time>
+                <span>•</span>
+                {% set wordCount = content | striptags | wordcount %}
+                {% set readTime = ((wordCount / 200) | round) or 1 %}
+                <span>{{ readTime }} min read</span>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+        </header>
+
+        <!-- Article Content -->
+        <div class="prose prose-lg max-w-none">
+          {{ content | safe }}
+        </div>
+
+        {% if 'faq' in tags %}
+          <div class="mt-12">
+            {{ faqs.faqs() }}
+          </div>
+        {% endif %}
+      </div>
+
+      <!-- RIGHT: RELATED ARTICLES (STICKY) -->
+      <aside class="lg:col-span-1">
+        <div class="sticky top-4 pb-4 px-4">
+          <h3 class="font-semibold mb-3 text-gray-900">Related Articles</h3>
+
+          {% set maxRelated = 10 %}
+          {% set shown = 0 %}
+
+          <ul class="space-y-3">
+            {% for post in collections.news | reverse %}
+              {% if post.url != page.url and shown < maxRelated %}
+                <li>
+                  <a href="{{ post.url }}" class="text-base text-[--tertiary-colour] hover:underline block font-medium">
+                    {{ post.data.title }}
+                  </a>
+                  <span class="text-xs text-gray-600">{{ post.date | readableDate }}</span>
+                </li>
+                {% set shown = shown + 1 %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+
+          {% if shown == 0 %}
+            <p class="text-sm text-gray-600">More articles coming soon.</p>
+          {% endif %}
+        </div>
+      </aside>
+
+    </article>
+
+  {% else %}
+    <!-- DEFAULT ARTICLE LAYOUT -->
+    <article class="my-6 flex flex-col md:block prose max-w-5xl mx-auto">
+
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">{{ title }}</h1>
 
       {% if showDate and date %}
-      <div class="flex items-center gap-4">
-        <!-- Author Image -->
-        <img 
-          src="/_includes/static/img/giselle-monbiot-blog.avif" 
-          alt="Giselle Monbiot" 
-          class="w-14 h-14 rounded-full object-cover shadow-sm flex-shrink-0"
-        >
-        
-        <!-- Author Info & Meta -->
-        <div class="flex flex-col">
-          <span class="font-medium text-gray-900">Giselle Monbiot</span>
-          <div class="flex items-center gap-2 text-sm text-gray-600">
-            <time datetime="{{ date | iso8601 }}">
-              {{ date | readableDate }}
-            </time>
-            <span>•</span>
-            {% set wordCount = content | striptags | wordcount %}
-            {% set readTime = ((wordCount / 200) | round) or 1 %}
-            <span>{{ readTime }} min read</span>
-          </div>
-        </div>
-      </div>
+        <time class="text-gray-600 text-sm italic block">{{ date | readableDate }}</time>
       {% endif %}
-    </header>
 
-    <!-- Article Content -->
-    <div class="prose prose-lg max-w-none">
       {{ content | safe }}
-    </div>
 
-    {% if 'faq' in tags %}
-      <div class="mt-12">
-        {{ faqs.faqs() }}
-      </div>
-    {% endif %}
+      {% if 'faq' in tags %}
+        <div class="mt-12">
+          {{ faqs.faqs() }}
+        </div>
+      {% endif %}
 
-  </article>
-
+    </article>
+  {% endif %}
+	
 </section>
