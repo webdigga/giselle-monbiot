@@ -1,0 +1,33 @@
+---
+layout: default
+path: contact
+type: contact
+ogType: website
+seoSchemaPageType: Contact
+eleventyComputed:
+  description: "{{ contactSeo.description }}"
+  seoTitle: "{{ contactSeo.seoTitle }}"
+  canonical: "{{ env.site }}/contact/"
+ignore: true
+---
+
+{% import "./_includes/partials/navbar.html" as navBar with context %}
+{% import "./_includes/components/buttons/more-button.html" as moreButton with context %}
+{% import "./_includes/components/section.html" as section with context %}
+{% import "./_includes/components/hero.html" as hero with context %}
+{% import "./_includes/components/newsletterSignup.html" as newsletterSignup with context %}
+
+{{ navBar.nav(bgColour='bg-white') }}
+
+
+
+  <section>
+    <div class="container container--large">
+      <div id="blab-widget-4804"></div>
+    </div>
+  </section>  
+
+
+
+<script src="https://bookme.name/js/booklikeaboss.widget.js?i=4804&h=uF8O18jPcQ4cOqMYk5zjodLlUabic8YOMbRYy9c8ux1Ze7HL1k1tUS6EHfao" async></script> 
+
