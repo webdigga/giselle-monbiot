@@ -21,15 +21,20 @@ ignore: true
 
 
 
-  <!-- <section>
-    <div class="container container--large">
-      <div id="blab-widget-4804"></div>
-    </div>
-  </section>  
+<section>
+  <div class="container">
+    <h1 class="dark-copy px-5 sm:px-10 xl:max-w-6xl">Products</h1>
+    <div id="blab-widget-4820" style="min-height: 600px;"></div>
+  </div>
+</section>  
 
+<script src="https://bookme.name/js/booklikeaboss.widget.js?i=4820&h=b9atva53ZoDPnwIIg9laQsQr3FwRrtyqylY0Sycjg2YwfHExlCcfy9XMxRhG" async></script>
 
-
-<script src="https://bookme.name/js/booklikeaboss.widget.js?i=4804&h=uF8O18jPcQ4cOqMYk5zjodLlUabic8YOMbRYy9c8ux1Ze7HL1k1tUS6EHfao" async></script>  -->
-
-
-<div id="blab-widget-4820"></div><script src="https://bookme.name/js/booklikeaboss.widget.js?i=4820&h=b9atva53ZoDPnwIIg9laQsQr3FwRrtyqylY0Sycjg2YwfHExlCcfy9XMxRhG" async></script>
+<script>
+  setTimeout(function() {
+  const iframe = document.querySelector('#blab-widget-4820 iframe');
+  if (iframe) {
+    iframe.style.height = (iframe.offsetHeight + 1) + 'px';
+  }
+}, 4000); // Delay to let BLaB fully load
+</script>
