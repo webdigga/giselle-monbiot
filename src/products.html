@@ -1,0 +1,50 @@
+---
+layout: default
+path: products
+type: products
+ogType: website
+seoSchemaPageType: Product
+title: Products
+eleventyComputed:
+  description: "Explore Giselle Monbiot’s range of transformative breathwork and holistic wellbeing products designed to support your personal growth."
+  seoTitle: "Products | Giselle Monbiot"
+  canonical: "{{ env.site }}/products/"
+---
+
+{% import "./_includes/partials/navbar.html" as navBar with context %}
+
+{{ navBar.nav(bgColour='bg-white') }}
+
+<section class="py-10 bg-neutral-50">
+  <div class="container text-center">
+    <h1 class="text-3xl sm:text-4xl font-semibold text-neutral-800 mb-4">Products</h1>
+    <p class="max-w-2xl mx-auto text-neutral-600">
+      Discover Giselle’s selection of breathwork sessions, courses, and resources created to help you reconnect with your body and restore balance.
+    </p>
+  </div>
+</section>
+
+<section class="py-10">
+  <div class="container relative">
+    <!-- Loading Spinner -->
+    <div id="spinner" class="absolute inset-0 flex items-center justify-center bg-white">
+      <div class="w-10 h-10 border-4 border-neutral-300 border-t-neutral-600 rounded-full animate-spin"></div>
+    </div>
+
+    <!-- Book Like A Boss Widget -->
+    <div id="blab-widget-4820" style="min-height: 600px;"></div>
+  </div>
+</section>
+
+<script src="https://bookme.name/js/booklikeaboss.widget.js?i=4820&h=b9atva53ZoDPnwIIg9laQsQr3FwRrtyqylY0Sycjg2YwfHExlCcfy9XMxRhG" async></script>
+
+<script>
+  // Check every half-second until the iframe appears, then hide the spinner
+  const checkIframe = setInterval(() => {
+    const iframe = document.querySelector('#blab-widget-4820 iframe');
+    if (iframe) {
+      document.getElementById('spinner').style.display = 'none';
+      clearInterval(checkIframe);
+    }
+  }, 500);
+</script>
