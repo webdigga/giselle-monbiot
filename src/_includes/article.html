@@ -66,24 +66,34 @@ eleventyComputed:
       <!-- RIGHT: RELATED ARTICLES (STICKY) -->
       <aside class="lg:col-span-1">
         <div class="sticky top-4 pb-4 px-4">
-          <h3 class="font-semibold mb-3 text-gray-900">Related Articles</h3>
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-gray-500 mb-5">Related Articles</h3>
 
-          {% set maxRelated = 10 %}
+          {% set maxRelated = 5 %}
           {% set shown = 0 %}
 
-          <ul class="space-y-3">
+          <div class="space-y-5">
             {% for post in collections.news | reverse %}
               {% if post.url != page.url and shown < maxRelated %}
-                <li>
-                  <a href="{{ post.url }}" class="text-base text-[--tertiary-colour] hover:underline block font-medium">
-                    {{ post.data.title }}
-                  </a>
-                  <span class="text-xs text-gray-600">{{ post.date | readableDate }}</span>
-                </li>
+                <a href="{{ post.url }}" class="group flex gap-4 items-start">
+                  <div class="w-16 h-16 flex-shrink-0 rounded-lg overflow-hidden">
+                    <img
+                      src="{{ post.data.imageForSeo }}"
+                      alt="{{ post.data.imageAlt }}"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <span class="text-sm font-medium text-gray-900 group-hover:text-[color:var(--primary-colour)] transition-colors duration-200 line-clamp-2 leading-snug">
+                      {{ post.data.title }}
+                    </span>
+                    <span class="text-xs text-gray-400 mt-1 block">{{ post.date | readableDate }}</span>
+                  </div>
+                </a>
                 {% set shown = shown + 1 %}
               {% endif %}
             {% endfor %}
-          </ul>
+          </div>
 
           {% if shown == 0 %}
             <p class="text-sm text-gray-600">More articles coming soon.</p>

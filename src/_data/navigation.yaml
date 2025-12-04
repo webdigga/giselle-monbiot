@@ -13,6 +13,12 @@ firstLevelItems:
         url: /workplace-wellbeing/
       - text: Book your Free Introductory Call
         url: /contact/#contact
+  - text: Specialisms
+    url: /specialisms/
+    showInFooter: false
+    secondLevelItems:
+      - text: Complex Trauma (C-PTSD)
+        url: /complex-trauma/
   - text: About
     url: /about/
     showInFooter: false

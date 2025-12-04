@@ -170,6 +170,11 @@ img.Right {
   background-position: 50% 10%;
 }
 
+.background-image-class--complex-trauma {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('/_includes/static/img/complex-trauma-hero.avif');
+  background-position: 50% 10%;
+}
+
 .background-image-class--breathwork-and-meditation {
   background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4) ), url('/_includes/static/img/breathwork-hero-118.avif');
 }
