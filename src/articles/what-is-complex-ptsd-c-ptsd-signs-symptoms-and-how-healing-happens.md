@@ -1,11 +1,14 @@
 ---
 title: What Is Complex PTSD (C-PTSD)? Signs, Symptoms & How Healing Happens
-seoTitle: What Is Complex PTSD (C-PTSD)? Signs, Symptoms & How Healing Happens | Giselle Monbiot
-description: Learn about C-PTSD, its signs and symptoms, why it's often missed by therapists, and how a whole-person approach to healing can help you move from survival to aliveness.
+seoTitle: What Is Complex PTSD (C-PTSD)? Signs, Symptoms & How Healing Happens |
+  Giselle Monbiot
+description: Learn about C-PTSD, its signs and symptoms, why it's often missed
+  by therapists, and how whole-person healing helps you move from survival to
+  aliveness.
 author: Giselle Monbiot
 date: 2025-12-04T10:00:00.000+00:00
 showDate: true
-imageForSeo: /_includes/static/img/complex-trauma-news.avif
+imageForSeo: /_includes/static/img/what-is-complex-ptsd-seo.avif
 imageAlt: Complex PTSD healing and recovery
 type: article
 tags:
@@ -15,6 +18,8 @@ tags:
 C-PTSD (Complex Post-Traumatic Stress Disorder) develops when someone has lived through long-term, repeated stress or emotional wounding. This might come from childhood neglect, emotional unavailability, inconsistent parenting, high criticism, coercive control, or years of being in situations where your needs were dismissed or met with unpredictability.
 
 Unlike PTSD, which is linked to a single traumatic event, C-PTSD forms slowly. It shapes the nervous system, the body, and a person's sense of self.
+
+<img src="/_includes/static/img/what-is-complex-ptsd.avif" alt="What Is Complex PTSD (C-PTSD)? Signs, Symptoms & How Healing Happens" title="What Is Complex PTSD (C-PTSD)? Signs, Symptoms & How Healing Happens" class="Centre" width="1000px" height="563px" loading="lazy"/>
 
 ## Common Signs of C-PTSD
 
