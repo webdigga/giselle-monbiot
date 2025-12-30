@@ -18,7 +18,7 @@ Midlife is often portrayed as a period of decline, yet for many women it can be 
 
 ## The Shifts of Midlife
 
-At this stage of life, many women find themselves navigating multiple transitions at once. Hormonal changes may affect energy, mood, and wellbeing. Family dynamics shift as children grow older and their needs change. Parents age and require more care and support. Relationships and careers often come under fresh scrutiny.
+At this stage of life, many women find themselves navigating multiple transitions at once. Hormonal changes may affect energy, mood, and wellbeing. Family dynamics shift as children grow older and their needs change. Parents age and require more care and support. These transitions can bring [waves of grief](/discover-how-grief-moves-in-waves/) for life as it was. Relationships and careers often come under fresh scrutiny.
 
 Amidst these changes, it’s common to feel a sense of emptiness or confusion, a quiet awareness that something feels missing. For some, this becomes a moment of asking: Is this really the life I want to be living?
 

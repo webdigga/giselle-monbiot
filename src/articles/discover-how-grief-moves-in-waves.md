@@ -1,6 +1,6 @@
 ---
 title: Discover how grief moves in waves
-seoTitle: The 5 Stages of Grief: Why It Moves in Waves | Giselle
+seoTitle: "The 5 Stages of Grief: Why It Moves in Waves | Giselle"
 description: Discover how grief moves in waves rather than stages, and through
   breath and body awareness, gently heal what rises during transition and loss.
 author: Giselle Monbiot
@@ -14,6 +14,20 @@ tags:
   - article
   - news
 ---
+## Understanding the 5 Stages of Grief
+
+The five stages of grief, first introduced by psychiatrist Elisabeth Kübler-Ross in 1969, have become one of the most widely recognised frameworks for understanding loss. These stages are:
+
+1. **Denial** – A sense of disbelief or numbness, as the mind struggles to accept what has happened.
+2. **Anger** – Frustration and irritation surface, sometimes directed at others, ourselves, or even the person we've lost.
+3. **Bargaining** – The "what if" phase, where we replay events and imagine how things might have been different.
+4. **Depression** – A deep sadness settles in as the reality of the loss becomes clearer.
+5. **Acceptance** – Gradually, we begin to find a way to live with the loss, though this doesn't mean the pain disappears entirely.
+
+While this model offers a helpful starting point, many people find that their experience of grief doesn't follow such a neat path. Grief is rarely linear. Instead, it often moves through us in waves — and understanding this can bring a deeper sense of compassion for ourselves during difficult times.
+
+---
+
 ## Grief: The Many Faces of Loss and the Invitation to Heal
 
 Grief touches every one of us, often in ways we don't expect. In this reflection, I explore the many forms grief can take, how it moves through us in waves rather than stages, and how, through breath and body awareness, we can begin to meet and integrate what arises with compassion.
@@ -24,7 +38,7 @@ Grief is the natural human response to loss. It's a reflection of love, connecti
 
 What makes grief so complex is that it isn't only tied to the present. Often, current losses awaken older ones that we never had the space or safety to feel at the time. Something such as a child leaving home or a relationship changing can bring forward emotions from long ago, old wounds that rise, asking to be seen and honoured.
 
-For many women, this resurfacing can feel particularly strong during perimenopause. As hormones shift, the body's natural mechanisms for holding things down soften. Feelings that were once neatly tucked away, such as sadness, anger, regret, begin to surface. It's as if the body is saying, It's time. This stage of life can become an invitation to process and integrate what earlier versions of us couldn't. Not because we did anything wrong, but because we now have the awareness, compassion and strength to meet ourselves more fully.
+For many women, this resurfacing can feel particularly strong during [perimenopause](/midlife-isnt-a-crisis-its-an-awakening/). As hormones shift, the body's natural mechanisms for holding things down soften. Feelings that were once neatly tucked away, such as sadness, anger, regret, begin to surface. It's as if the body is saying, It's time. This stage of life can become an invitation to process and integrate what earlier versions of us couldn't. Not because we did anything wrong, but because we now have the awareness, compassion and strength to meet ourselves more fully.
 
 <img src="/_includes/static/img/discover-how-grief-moves-in-waves.avif" alt="Ocean waves and seashore during daytime representing grief, healing, and emotional transitions through body awareness" title="Ocean waves and seashore during daytime representing grief, healing, and emotional transitions through body awareness" class="Centre" width="1000px" height="563px" loading="lazy"/>
 
@@ -50,6 +64,8 @@ And in doing so, we find our way back — not to who we were before, but to a de
 
 The body holds the imprints of our experiences — not just our joys, but also our griefs. Through gentle somatic work and breath practices, we can begin to release what has been held within and find greater ease in both body and heart.
 
-In my work, I combine breathwork, somatic awareness and Therapeutic enquiry to help people meet their emotions safely and with curiosity. Grief doesn't need to be rushed or "fixed." It needs to be witnessed, felt, and integrated, allowing us to reconnect with the aliveness that sits beneath the sorrow.
+In my work, I combine [breathwork](/breathwork/), somatic awareness and [therapeutic enquiry](/one-to-one-therapy/) to help people meet their emotions safely and with curiosity. Grief doesn't need to be rushed or "fixed." It needs to be witnessed, felt, and integrated, allowing us to reconnect with the aliveness that sits beneath the sorrow.
 
 If you are in a season of loss, transition, or emotional heaviness, know that you don't have to navigate it alone. Healing begins with a single breath, a willingness to feel, and the gentle reminder that what is rising is ready to be released.
+
+You're welcome to explore my [1:1 sessions](/one-to-one-therapy/) or [breathwork offerings](/breathwork/) to begin your healing journey.
