@@ -165,6 +165,25 @@ module.exports = function (eleventyConfig) {
     return String(value || ""); // Convert anything else safely
   });
 
+  // Sort events: fixed-date events first (by nearest date), then recurring events
+  eleventyConfig.addFilter("sortEvents", function (events) {
+    const now = new Date();
+
+    // Separate into fixed-date and recurring events
+    const fixedDateEvents = events.filter(e => e.data.start_date);
+    const recurringEvents = events.filter(e => !e.data.start_date);
+
+    // Sort fixed-date events by start_date (nearest first)
+    fixedDateEvents.sort((a, b) => {
+      const dateA = new Date(a.data.start_date);
+      const dateB = new Date(b.data.start_date);
+      return dateA - dateB;
+    });
+
+    // Return fixed-date events followed by recurring events
+    return [...fixedDateEvents, ...recurringEvents];
+  });
+
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
   return {
