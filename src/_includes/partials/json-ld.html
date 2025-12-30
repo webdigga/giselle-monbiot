@@ -49,12 +49,80 @@
             "description": "Giselle Monbiot is a breathwork therapist specialising in functional and conscious connected breath to support emotional wellbeing, resilience and personal transformation.",
             "sameAs": [
               "https://www.linkedin.com/in/giselle-monbiot/",
-              "https://www.instagram.com/giselle.monbiot/"
+              "https://www.instagram.com/giselle.monbiot/",
+              "https://www.youtube.com/channel/UConSx-QPpjDeS5k8R4XkZdg"
             ],
             "jobTitle": "Therapist & Breathwork Facilitator"
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "{{ env.site }}/#business",
+            "name": "Giselle Monbiot - Integrative Therapy & Breathwork",
+            "description": "Integrative therapy and breathwork sessions in Kingston upon Thames, London. Specialising in trauma-informed therapy, conscious connected breathwork, and somatic healing.",
+            "url": "{{ env.site }}/",
+            "telephone": "{{ settings.phoneNumber }}",
+            "email": "{{ settings.email }}",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Kingston upon Thames",
+              "addressRegion": "London",
+              "addressCountry": "GB"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "51.4123",
+              "longitude": "-0.3007"
+            },
+            "areaServed": ["Kingston upon Thames", "London", "Surrey", "Guildford"],
+            "priceRange": "££",
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "09:00",
+              "closes": "18:00"
+            }
           }
         ]
       }      
+
+    {% elseif seoSchemaPageType == 'Event' %}
+
+      {# Event JSON ld #}
+
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "{{ title | safe }}",
+        "description": "{{ description }}",
+        "image": "{% if imageForSeo %}{{ env.site }}{{ imageForSeo }}{% else %}{{ env.site }}/android-chrome-512x512.png{% endif %}",
+        "url": "{{ env.site }}/{{ title | slugify }}/",
+        {% if start_date %}"startDate": "{{ start_date | iso8601 }}",{% endif %}
+        {% if end_date %}"endDate": "{{ end_date | iso8601 }}",{% endif %}
+        {% if location %}"location": {
+          "@type": "Place",
+          "name": "{{ location | safe }}",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "{{ location | safe }}"
+          }
+        },{% endif %}
+        "organizer": {
+          "@type": "Person",
+          "name": "Giselle Monbiot",
+          "url": "{{ env.site }}/about-giselle-monbiot-integrative-therapist-and-breathwork-facilitator/"
+        },
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        {% if price %}"offers": {
+          "@type": "Offer",
+          "url": "{{ bookingLink | safe }}",
+          "availability": "https://schema.org/InStock"
+        },{% endif %}
+        "performer": {
+          "@type": "Person",
+          "name": "Giselle Monbiot"
+        }
+      }
 
     {% elseif seoSchemaPageType == 'Article' %}
 
