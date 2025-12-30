@@ -1,6 +1,6 @@
 ---
 title: Discover how grief moves in waves
-seoTitle: Discover how grief moves in waves | Giselle Monbiot
+seoTitle: The 5 Stages of Grief: Why It Moves in Waves | Giselle
 description: Discover how grief moves in waves rather than stages, and through
   breath and body awareness, gently heal what rises during transition and loss.
 author: Giselle Monbiot

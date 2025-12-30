@@ -1,6 +1,6 @@
 ---
 title: Why Talking Alone Isn’t Enough for True Healing
-seoTitle: Why Talking Alone Isn’t Enough for True Healing | Giselle Monbiot
+seoTitle: Why Talking Therapy Isn't Enough | Giselle Monbiot
 description: Talking therapy alone can’t heal trauma. Integrating body, breath,
   and somatic work helps release patterns and create lasting transformation.
 author: Giselle Monbiot
