@@ -26,6 +26,7 @@
 # Deleted events - redirect to events listing
 /harmony-within/                                      /courses-and-events/                                                      301
 /remembering-you/                                     /courses-and-events/                                                      301
+/transformation-day-retreat/                          /courses-and-events/                                                      301
 
 # Old sitemap redirects (legacy WordPress sitemaps)
 /sitemap.txt                                          /sitemap.xml                                                              301
