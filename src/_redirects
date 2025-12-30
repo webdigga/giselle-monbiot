@@ -27,5 +27,8 @@
 /harmony-within/                                      /courses-and-events/                                                      301
 /remembering-you/                                     /courses-and-events/                                                      301
 
+# Old sitemap redirect
+/sitemap.txt                                          /sitemap.xml                                                              301
+
 # 404 fallback
 /*                                                    /404.html                                                                 404
