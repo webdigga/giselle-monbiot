@@ -7,7 +7,9 @@ permalink: /404.html
 ignore: true
 ---
 
-{% include "./partials/navbar.html" %}
+{% import "./_includes/partials/navbar.html" as navBar with context %}
+
+{{ navBar.nav(bgColour='bg-white') }}
 
 <main class="min-h-[60vh] flex items-center justify-center px-6 py-24">
   <div class="text-center max-w-xl">
