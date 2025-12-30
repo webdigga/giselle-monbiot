@@ -8,6 +8,7 @@ ignore: true
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
+{% import "./_includes/components/buttons/anchor.html" as defined_anchor with context %}
 
 {{ navBar.nav(bgColour='bg-white') }}
 
@@ -21,16 +22,8 @@ ignore: true
     </p>
 
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a
-        href="/"
-        class="inline-block px-6 py-3 bg-[color:var(--primary-colour)] text-white font-semibold rounded hover:opacity-90 transition">
-        Go to Homepage
-      </a>
-      <a
-        href="/courses-and-events/"
-        class="inline-block px-6 py-3 border-2 border-[color:var(--primary-colour)] text-[color:var(--primary-colour)] font-semibold rounded hover:bg-[color:var(--primary-colour)] hover:text-white transition">
-        View Events
-      </a>
+      {{ defined_anchor.anchor(type='primary', anchorText='Go to Homepage', destination='/', iconType='arrow') }}
+      {{ defined_anchor.anchor(type='secondary', anchorText='View Events', destination='/courses-and-events/', iconType='arrow') }}
     </div>
 
     <div class="mt-12 text-left bg-gray-100 p-6 rounded-lg">
