@@ -83,7 +83,8 @@ module.exports = function (eleventyConfig) {
     "./src/admin/buttonComponent.js": "./admin/buttonComponent.js",
     "./src/admin/videoComponent.js": "./admin/videoComponent.js",
     "./src/admin/audioComponent.js": "./admin/audioComponent.js",
-    "./src/site.webmanifest": "./site.webmanifest"
+    "./src/site.webmanifest": "./site.webmanifest",
+    "./src/_redirects": "./_redirects"
   });
 
   // Copy Image Folder to /_site
