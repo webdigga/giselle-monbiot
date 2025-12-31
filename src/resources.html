@@ -1,15 +1,14 @@
 ---
 layout: default
-ignore: true
-path: products
-type: products
+path: resources
+type: resources
 ogType: website
-seoSchemaPageType: Product
+seoSchemaPageType: WebPage
 title: Your At Home Practice
 eleventyComputed:
   description: "Welcome to this collection of online healing resources, created to support you on your journey back to balance, clarity and a deeper sense of self."
   seoTitle: "Resources for Your Journey | Giselle Monbiot"
-  canonical: "{{ env.site }}/products/"
+  canonical: "{{ env.site }}/resources/"
 ---
 
 {% import "./_includes/partials/navbar.html" as navBar with context %}
@@ -27,6 +26,12 @@ eleventyComputed:
   </div>
 </section>
 
+<style>
+  #blab-widget-4820 iframe {
+    min-height: 614px !important;
+  }
+</style>
+
 <section class="pt-4 pb-10">
   <div class="container relative">
     <!-- Loading Spinner -->
@@ -35,7 +40,7 @@ eleventyComputed:
     </div>
 
     <!-- Book Like A Boss Widget -->
-    <div id="blab-widget-4820" style="min-height: 600px;"></div>
+    <div id="blab-widget-4820" style="min-height: 614px;"></div>
   </div>
 </section>
 

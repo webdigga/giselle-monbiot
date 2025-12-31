@@ -16,6 +16,7 @@ eleventyComputed:
 {% import "./_includes/components/section.html" as section with context %}
 {% import "./_includes/components/hero.html" as hero with context %}
 {% import "./_includes/components/newsletterSignup.html" as newsletterSignup with context %}
+{% import "./_includes/components/resourcesBanner.html" as resourcesBanner with context %}
 
 {{ navBar.nav(bgColour='bg-white') }}
 
@@ -54,8 +55,12 @@ eleventyComputed:
     {{ section.sectionComponent(scope=events, buttonType='secondary') }}
   </section>
 
+  <section class="bg-gradient-to-b from-neutral-50 to-neutral-100 text-[color:var(--dark-copy)] border-y-4 border-[color:var(--primary-colour)]">
+    {{ resourcesBanner.resourcesBanner() }}
+  </section>
+
   <section class="bg-[color:var(--white)] text-[color:var(--dark-copy)]">
-    {{ section.sectionComponent(scope=workplaceWellbeing, buttonType='primnary') }}
+    {{ section.sectionComponent(scope=workplaceWellbeing, buttonType='primary') }}
   </section>
 
   <section class="bg-[color:var(--tertiary-colour)] text-[color:var(--white)]">

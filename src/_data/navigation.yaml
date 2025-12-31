@@ -13,6 +13,9 @@ firstLevelItems:
         url: /workplace-wellbeing/
       - text: Book your Free Introductory Call
         url: /contact/#contact
+  - text: Resources
+    url: /resources/
+    showInFooter: true
   - text: Specialisms
     url: /specialisms/
     showInFooter: false
