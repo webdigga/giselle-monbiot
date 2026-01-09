@@ -7,7 +7,7 @@ description: You've reached out to Giselle Monbiot – an integrative therapist
 author: David White
 date: 2025-04-24T11:44:00.000Z
 showDate: false
-imageForSeo: /_includes/static/img/pexels-vie-studio-4439457.avif
+cardImage: /_includes/static/img/pexels-vie-studio-4439457.avif
 imageAlt: Letters on a wall, reading - Thank You
 type: article
 tags:

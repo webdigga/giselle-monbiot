@@ -6,7 +6,7 @@ description: Discover how midlife can be an awakening for women – a chance for
 author: Giselle Monbiot
 date: 2025-09-12T10:13:00.000+01:00
 showDate: true
-imageForSeo: /_includes/static/img/midlife-isnt-a-crisis-its-an-awakening.avif
+cardImage: /_includes/static/img/midlife-isnt-a-crisis-its-an-awakening-card.avif
 imageAlt: Midlife woman standing under tall trees in nature, symbolising renewal
   and awakening
 type: article

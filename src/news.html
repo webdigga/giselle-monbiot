@@ -23,9 +23,9 @@ eleventyComputed:
           href="{{ newsItem.url | url }}"
           class="text-xl text-gray-900 mb-3 no-underline hover:underline flex flex-col h-full">
           <img
-            src="{{ newsItem.data.imageForSeo }}"
+            src="{{ newsItem.data.cardImage }}"
             alt="{{ newsItem.data.imageAlt }}"
-            class="w-full"
+            class="w-full border-l border-r border-t border-gray-400"
             width="600px"
             height="450px"
           />

@@ -7,7 +7,7 @@ description: Explore perimenopause and mental health with Giselle
 author: Giselle Monbiot
 date: 2025-05-12T10:21:00.000Z
 showDate: true
-imageForSeo: /_includes/static/img/screenshot-2025-05-12-10.33.33.avif
+cardImage: /_includes/static/img/screenshot-2025-05-12-10.33.33-card.avif
 imageAlt: Am I crazy? Or....
 type: article
 tags:

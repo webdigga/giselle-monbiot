@@ -5,8 +5,6 @@ seoTitle: From Protection to Connection | Giselle Monbiot
 description: A one-day Valentine's Day workshop for single people exploring
   relationship patterns, protective defences, and reconnecting with the capacity
   for closeness and intimacy.
-imageForSeo: /_includes/static/img/harmony-within-189.jpg
-imageAlt: Workshop facilitation
 type: Courses and Event
 start_date: 2026-02-14T10:30:00.000+00:00
 end_date: 2026-02-14T17:00:00.000+00:00

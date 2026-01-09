@@ -94,7 +94,7 @@
         "@type": "Event",
         "name": "{{ title | safe }}",
         "description": "{{ description }}",
-        "image": "{% if imageForSeo %}{{ env.site }}{{ imageForSeo }}{% else %}{{ env.site }}/android-chrome-512x512.png{% endif %}",
+        "image": "{% if cardImage %}{{ env.site }}{{ cardImage }}{% else %}{{ env.site }}/android-chrome-512x512.png{% endif %}",
         "url": "{{ env.site }}/{{ title | slugify }}/",
         {% if start_date %}"startDate": "{{ start_date | iso8601 }}",{% endif %}
         {% if end_date %}"endDate": "{{ end_date | iso8601 }}",{% endif %}
@@ -133,7 +133,7 @@
         "@type": "Article",
         "headline": "{{ seoTitle | safe }}",
         "description": "{{ description }}",
-        "image": "{% if imageForSeo %}{{ env.site }}{{ imageForSeo }}{% else %}{{ env.site }}/android-chrome-512x512.png{% endif %}",
+        "image": "{% if cardImage %}{{ env.site }}{{ cardImage }}{% else %}{{ env.site }}/android-chrome-512x512.png{% endif %}",
         "author": {
           "@type": "Person",
           "name": "{{ settings.author }}",

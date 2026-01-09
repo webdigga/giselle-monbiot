@@ -6,7 +6,7 @@ description: Explore guided meditations, stress relief techniques, and business
 author: David White
 date: 2025-03-17T16:02:00.000Z
 showDate: true
-imageForSeo: /_includes/static/img/zoltan-tasi-vhnvtlk8rcc-unsplash1.avif
+cardImage: /_includes/static/img/zoltan-tasi-vhnvtlk8rcc-unsplash1-card.avif
 imageAlt: Flower with a dark mysterious background
 type: article
 tags:

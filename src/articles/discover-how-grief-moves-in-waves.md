@@ -6,7 +6,7 @@ description: Discover how grief moves in waves rather than stages, and through
 author: Giselle Monbiot
 date: 2025-10-24T09:55:00.000+01:00
 showDate: true
-imageForSeo: /_includes/static/img/discover-how-grief-moves-in-waves-rather-than-stages.avif
+cardImage: /_includes/static/img/discover-how-grief-moves-in-waves-rather-than-stages-card.avif
 imageAlt: Ocean waves and seashore during daytime representing grief, healing,
   and emotional transitions through body awareness
 type: article

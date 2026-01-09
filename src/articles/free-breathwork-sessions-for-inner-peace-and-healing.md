@@ -6,7 +6,7 @@ description: Join free online breathwork sessions for relaxation, clarity, and
 author: David White
 date: 2025-03-16T12:48:00.000Z
 showDate: true
-imageForSeo: /_includes/static/img/course-placeholder-scaled.avif
+cardImage: /_includes/static/img/course-placeholder-scaled-card.avif
 imageAlt: Close up in corn field
 type: article
 tags:

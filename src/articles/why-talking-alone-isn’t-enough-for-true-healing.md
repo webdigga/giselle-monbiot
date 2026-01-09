@@ -6,7 +6,7 @@ description: Talking therapy alone can’t heal trauma. Integrating body, breath
 author: Giselle Monbiot
 date: 2025-08-27T15:48:00.000+01:00
 showDate: true
-imageForSeo: /_includes/static/img/giselle-meditating.avif
+cardImage: /_includes/static/img/giselle-meditating-card.avif
 imageAlt: Someone sitting meditating
 type: article
 tags:

@@ -3,8 +3,6 @@ title: Conscious Connected Breathwork (in-person)
 seoTitle: Conscious Connected Breathwork | Giselle Monbiot
 description: Explore Conscious Connected Breathwork to release emotional blocks,
   reduce stress, and reconnect with your inner wisdom and vitality.
-imageForSeo: /_includes/static/img/harmony-within-189.jpg
-imageAlt: Giselle ovewrseeing deep relaxation
 type: Courses and Event
 start_date: ""
 end_date: ""

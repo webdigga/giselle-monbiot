@@ -8,7 +8,7 @@ description: Learn about C-PTSD, its signs and symptoms, why it's often missed
 author: Giselle Monbiot
 date: 2025-12-04T10:00:00.000+00:00
 showDate: true
-imageForSeo: /_includes/static/img/what-is-complex-ptsd-seo.avif
+cardImage: /_includes/static/img/what-is-complex-ptsd-card.avif
 imageAlt: Complex PTSD healing and recovery
 type: article
 tags:

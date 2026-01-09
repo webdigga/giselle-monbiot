@@ -7,7 +7,7 @@ description: Discover competitive pricing for wellbeing therapy and workshops
 author: David White
 date: 2025-06-17T11:01:00.000Z
 showDate: false
-imageForSeo: /_includes/static/img/giselle-monbiot-therapy-pricing.jpg
+cardImage: /_includes/static/img/giselle-monbiot-therapy-pricing.jpg
 imageAlt: 2 women practising breathwork
 type: article
 tags:

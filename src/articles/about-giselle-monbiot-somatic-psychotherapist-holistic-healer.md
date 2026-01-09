@@ -7,7 +7,7 @@ description: Giselle Monbiot offers Integrative Therapy and Breathwork in
 author: David White
 date: 2025-04-03T10:24:00.000Z
 showDate: false
-imageForSeo: /_includes/static/img/about-page-85.avif
+cardImage: /_includes/static/img/about-page-85.avif
 imageAlt: Giselle Monbiot
 type: article
 tags:

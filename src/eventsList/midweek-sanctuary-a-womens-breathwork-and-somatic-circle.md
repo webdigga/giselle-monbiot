@@ -5,8 +5,6 @@ seoTitle: Women’s Breathwork and Somatic Circle | Giselle Monbiot
 description: A weekly women's breathwork and somatic circle in Kingston – a
   calming, candlelit space to release, reconnect and restore. Wednesdays
   7–8:30pm
-imageForSeo: /_includes/static/img/midweek-santuary.avif
-imageAlt: Midweek sanctuary
 type: Courses and Event
 repeatingDate: Wednesdays 7pm – 8.30pm
 location: Kingston upon Thames

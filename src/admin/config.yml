@@ -40,17 +40,6 @@ collections:
         pattern: ['^.{70,155}$', "Must be between 70 and 155 characters"]
       }
       - { label: "Body", name: "body", widget: "markdown" }
-      - {
-        label: "Image for SEO (Twitter cards and OG), must be jpg",
-        name: "imageForSeo",
-        widget: "image",
-        hint: "*This is required, just use any image that you have used in the main body of the event (Use 1.91:1 ratio, e.g. 1200 x 628)"
-      }
-      - {
-        label: "Image Alt",
-        name: "imageAlt",
-        widget: "string"
-      }
       - { label: "Type", name: "type", widget: "select", options: ["Courses and Event", "Retreat"] }
       - { label: "Start Date", name: "start_date", widget: "datetime", required: false }
       - { label: "End Date", name: "end_date", widget: "datetime", required: false }
@@ -140,8 +129,8 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Show Date?", name: "showDate", widget: "boolean", default: false, required: false }
       - {
-        label: "Image for SEO",
-        name: "imageForSeo",
+        label: "Card Image (for index/listing pages)",
+        name: "cardImage",
         widget: "image",
         hint: "*This is required, just use any image that you have used in the main body of the article (Use 4:3 ratio, e.g. 600px x 450px)"
       }
