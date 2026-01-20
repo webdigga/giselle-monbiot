@@ -8,6 +8,8 @@ start_date: ""
 end_date: ""
 location: Online
 price: £20
+schemaPrice: 20
+ticketsAvailableFrom: 2025-01-01T00:00:00.000+00:00
 bookingLink: https://bookme.name/gisellemonbiot/online-breathwork-sessions-for-inner-peace-and-healing
 bookingLinkExternal: true
 showMoreDetails: true

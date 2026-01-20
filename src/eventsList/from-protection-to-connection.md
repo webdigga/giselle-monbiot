@@ -10,6 +10,8 @@ start_date: 2026-02-14T10:30:00.000+00:00
 end_date: 2026-02-14T17:00:00.000+00:00
 location: Guildford Institute, Ward St, North St, Guildford GU1 4LH
 price: £120 / Early bird £90 until 1st Feb
+schemaPrice: 120
+ticketsAvailableFrom: 2026-01-01T00:00:00.000+00:00
 bookingLink: https://bookme.name/gisellemonbiot/lite/from-protection-to-connection
 bookingLinkExternal: true
 showMoreDetails: true

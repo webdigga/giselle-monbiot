@@ -9,6 +9,8 @@ end_date: ""
 repeatingDate: "Last Friday of every month. Duration: 1.5hrs. 7.15-9pm"
 location: Kingston Quaker Centre, Fairfield, Kingston upon Thames, KT1 2PT
 price: £30
+schemaPrice: 30
+ticketsAvailableFrom: 2025-01-01T00:00:00.000+00:00
 bookingLink: https://bookme.name/gisellemonbiot/monthly-breathwork-circles
 bookingLinkExternal: true
 showMoreDetails: true

@@ -10,6 +10,8 @@ start_date: 2026-03-21T10:00:00.000+00:00
 end_date: 2026-03-21T16:30:00.000+00:00
 location: Kingston Quaker Centre, Fairfield E, Kingston upon Thames KT1 2PT
 price: £120 / Early bird £99 until 14th Feb
+schemaPrice: 120
+ticketsAvailableFrom: 2026-01-15T00:00:00.000+00:00
 bookingLink: https://bookme.name/gisellemonbiot/lite/coming-back-into-balance
 bookingLinkExternal: true
 showMoreDetails: true
