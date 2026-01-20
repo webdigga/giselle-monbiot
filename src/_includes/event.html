@@ -10,6 +10,17 @@ eleventyComputed:
 
 {{ navBar.nav(bgColour='bg-white') }}
 
+{% if archived %}
+<div class="bg-red-100 border-l-4 border-red-500 text-red-700">
+  <div class="container">
+    <div class="max-w-5xl mx-auto py-4">
+      <p class="font-bold m-0">This event is no longer available</p>
+      <p class="m-0">This event has passed or is no longer accepting bookings. <a href="/courses-and-events/" class="underline">View my current events</a>.</p>
+    </div>
+  </div>
+</div>
+{% endif %}
+
 <div class="bg-[color:var(--primary-colour)]">
   <div class="container">
     <div class="my-6 grid grid-cols-12 max-w-5xl mx-auto items-center">
@@ -72,7 +83,11 @@ eleventyComputed:
 
     {{ content | safe }}
 
+    <div class="clear-both"></div>
+
+    {% if not archived %}
     {{ anchorButton.anchor(anchorText='Book Now', destination=bookingLink, isExternal=bookingLinkExternal, classes='no-underline flex justify-self-end') }}
+    {% endif %}
 
   </article>
 	

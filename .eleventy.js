@@ -166,12 +166,16 @@ module.exports = function (eleventyConfig) {
   });
 
   // Sort events: fixed-date events first (by nearest date), then recurring events
+  // Excludes archived events from display
   eleventyConfig.addFilter("sortEvents", function (events) {
     const now = new Date();
 
+    // Filter out archived events
+    const activeEvents = events.filter(e => !e.data.archived);
+
     // Separate into fixed-date and recurring events
-    const fixedDateEvents = events.filter(e => e.data.start_date);
-    const recurringEvents = events.filter(e => !e.data.start_date);
+    const fixedDateEvents = activeEvents.filter(e => e.data.start_date);
+    const recurringEvents = activeEvents.filter(e => !e.data.start_date);
 
     // Sort fixed-date events by start_date (nearest first)
     fixedDateEvents.sort((a, b) => {

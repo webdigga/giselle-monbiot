@@ -14,6 +14,7 @@ bookingLink: https://bookme.name/gisellemonbiot/lite/from-protection-to-connecti
 bookingLinkExternal: true
 showMoreDetails: true
 tags: event
+archived: true
 ---
 **A Valentine's Day workshop for single people with Oliver Baum and Giselle Monbiot**
 

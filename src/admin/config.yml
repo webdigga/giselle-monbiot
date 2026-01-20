@@ -49,6 +49,7 @@ collections:
       - { label: "Booking Link", name: "bookingLink", widget: "string" }
       - { label: "Booking link external?", name: "bookingLinkExternal", widget: "boolean", default: false, required: false }
       - { label: "Show more details?", name: "showMoreDetails", widget: "boolean", default: false, required: false }
+      - { label: "Archived?", name: "archived", widget: "boolean", default: false, required: false, hint: "Set to true to hide this event from the website listing. The event page will still be accessible but will show a notice that it is no longer available." }
       - widget: select
         label: "tags"
         name: "tags"

@@ -87,8 +87,17 @@
 
     {% elseif seoSchemaPageType == 'Event' %}
 
-      {# Event JSON ld #}
+      {# Event JSON ld - skip for archived events #}
 
+      {% if archived %}
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "{{ title | safe }}",
+        "description": "{{ description }}",
+        "url": "{{ env.site }}/{{ title | slugify }}/"
+      }
+      {% else %}
       {
         "@context": "https://schema.org",
         "@type": "Event",
@@ -123,6 +132,7 @@
           "name": "Giselle Monbiot"
         }
       }
+      {% endif %}
 
     {% elseif seoSchemaPageType == 'Article' %}
 
