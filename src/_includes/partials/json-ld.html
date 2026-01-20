@@ -125,6 +125,9 @@
         {% if price %}"offers": {
           "@type": "Offer",
           "url": "{{ bookingLink | safe }}",
+          "priceCurrency": "GBP",
+          {% if schemaPrice %}"price": "{{ schemaPrice }}",{% endif %}
+          {% if ticketsAvailableFrom %}"validFrom": "{{ ticketsAvailableFrom | iso8601 }}",{% endif %}
           "availability": "https://schema.org/InStock"
         },{% endif %}
         "performer": {

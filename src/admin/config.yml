@@ -46,6 +46,8 @@ collections:
       - { label: "Repeating Date", name: "repeatingDate", widget: "string", required: false, hint: "If this is a repeating event, please enter the repeating date in the format 'every Monday' or 'every first Friday of the month'. Also if filling htis out then start and end date should be omitted" }
       - { label: "Location", name: "location", widget: "string" }
       - { label: "Price", name: "price", widget: "string" }
+      - { label: "Schema Price (numeric)", name: "schemaPrice", widget: "number", required: false, hint: "Numeric price for Google schema (e.g. 120). Leave blank if not applicable." }
+      - { label: "Tickets Available From", name: "ticketsAvailableFrom", widget: "datetime", required: false, hint: "Date when tickets became available for sale. Used for Google schema." }
       - { label: "Booking Link", name: "bookingLink", widget: "string" }
       - { label: "Booking link external?", name: "bookingLinkExternal", widget: "boolean", default: false, required: false }
       - { label: "Show more details?", name: "showMoreDetails", widget: "boolean", default: false, required: false }
