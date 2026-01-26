@@ -15,59 +15,109 @@
   {% endfor %}
 
   {% if hasCourses %}
-    <h2 class="text-[color:var(--primary-colour)] mb-4">Courses and Events</h2>
-    <div class="grid gap-6 mb-10">
+    <h2 class="text-[color:var(--primary-colour)] mb-6 text-3xl">Courses and Events</h2>
+    <div class="grid gap-8 mb-12">
       {% for event in sortedEvents %}
         {% if event.data.type == "Courses and Event" %}
-          <div class="bg-[color:var(--quaternary-colour)] border-l-4 border-[color:var(--secondary-colour)] p-6 ">
-            <h3 class="font-semibold mb-2">{{ event.data.title }}</h3>
-
-            {% if event.data.start_date and event.data.end_date %}
-              {% set startDateReadable = event.data.start_date | readableDate %}
-              {% set endDateReadable = event.data.end_date | readableDate %}
-              {% set startTimeReadable = event.data.start_date | readableTime %}
-              {% set endTimeReadable = event.data.end_date | readableTime %}
-              {% if startDateReadable == endDateReadable %}
-              <p>
-                <time>
-                {{ startDateReadable }}, {{ startTimeReadable }} - {{ endTimeReadable }}
-                </time>
-              </p>
-              {% else %}
-              <p>
-                <time>
-                {{ startDateReadable }} {{ startTimeReadable }} - {{ endDateReadable }} {{ endTimeReadable }}
-                </time>
-              </p>
-              {% endif %}
-            {% else %}
-              <p>{{ event.data.repeatingDate }}</p>
-            {% endif %}
-
-            <p class="mb-1"><strong>Location:</strong> {{ event.data.location }}</p>
-            <p class="mb-1"><strong>Price:</strong> {{ event.data.price }}</p>
-            <p class="mt-2">{{ event.data.description }}</p>
-
-            <div class="flex justify-between">
-              {% if event.data.showMoreDetails %}
-                <a href="/{{ event.data.title | slugify }}/" class="underline">Find out more about {{ event.data.title }}</a>
-              {% endif %}
-              <a
-                href="{{ event.data.bookingLink }}"
-                class="underline"
-                {% if event.data.bookingLinkExternal == true %}
-                  target="_blank"
-                  rel="noopener noreferrer"
+          <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <div class="border-t-4 border-[color:var(--primary-colour)]"></div>
+            <div class="p-6 md:p-8">
+              {# Title and badge #}
+              <div class="flex flex-wrap items-start gap-3 mb-4">
+                <h3 class="text-xl md:text-2xl font-semibold text-gray-900 m-0 leading-tight">{{ event.data.title }}</h3>
+                {% if event.data.audienceType %}
+                  <span class="inline-flex items-center px-3 py-1.5 text-xs font-medium rounded-full leading-none font-sans {% if event.data.audienceType == 'Women Only' %}bg-pink-100 text-pink-800{% else %}bg-blue-100 text-blue-800{% endif %}">
+                    {{ event.data.audienceType }}
+                  </span>
                 {% endif %}
+              </div>
+
+              {# Meta info grid #}
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-5 py-4 border-y border-gray-100">
+                {# Date #}
+                <div class="flex items-start gap-3">
+                  <div class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-[color:var(--primary-colour)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-xs text-gray-500 uppercase tracking-wide m-0 font-sans">When</p>
+                    {% if event.data.start_date and event.data.end_date %}
+                      {% set startDateReadable = event.data.start_date | readableDate %}
+                      {% set endDateReadable = event.data.end_date | readableDate %}
+                      {% set startTimeReadable = event.data.start_date | readableTime %}
+                      {% set endTimeReadable = event.data.end_date | readableTime %}
+                      {% if startDateReadable == endDateReadable %}
+                        <p class="text-gray-900 font-medium m-0">{{ startDateReadable }}</p>
+                        <p class="text-gray-600 text-sm m-0">{{ startTimeReadable }} - {{ endTimeReadable }}</p>
+                      {% else %}
+                        <p class="text-gray-900 font-medium m-0">{{ startDateReadable }} - {{ endDateReadable }}</p>
+                      {% endif %}
+                    {% else %}
+                      <p class="text-gray-900 font-medium m-0">{{ event.data.repeatingDate }}</p>
+                    {% endif %}
+                  </div>
+                </div>
+
+                {# Location #}
+                <div class="flex items-start gap-3">
+                  <div class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-[color:var(--primary-colour)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-xs text-gray-500 uppercase tracking-wide m-0 font-sans">Location</p>
+                    <p class="text-gray-900 font-medium m-0">{{ event.data.location }}</p>
+                  </div>
+                </div>
+
+                {# Price #}
+                <div class="flex items-start gap-3">
+                  <div class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-[color:var(--primary-colour)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-xs text-gray-500 uppercase tracking-wide m-0 font-sans">Price</p>
+                    <p class="text-gray-900 font-semibold text-lg m-0">{{ event.data.price }}</p>
+                  </div>
+                </div>
+              </div>
+
+              {# Description #}
+              <p class="text-gray-600 mb-6 leading-relaxed">{{ event.data.description }}</p>
+
+              {# Actions #}
+              <div class="flex flex-wrap gap-3">
+                {% if event.data.showMoreDetails %}
+                  <a href="/{{ event.data.title | slugify }}/" class="inline-flex items-center px-5 py-2.5 bg-[color:var(--primary-colour)] text-white font-medium rounded-lg hover:bg-[color:var(--secondary-colour)] transition-colors duration-200 no-underline">
+                    Find out more
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                {% endif %}
+                <a
+                  href="{{ event.data.bookingLink }}"
+                  class="inline-flex items-center px-5 py-2.5 border-2 border-[color:var(--primary-colour)] text-[color:var(--primary-colour)] font-medium rounded-lg hover:bg-[color:var(--primary-colour)] hover:text-white transition-colors duration-200 no-underline"
+                  {% if event.data.bookingLinkExternal == true %}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  {% endif %}
                 >
-                {% if event.data.bookingLinkExternal == true %}
-                  Book now
-                {% else %}
-                  Enquire now
-                {% endif %}
-              </a>
-            </div>
+                  {% if event.data.bookingLinkExternal == true %}
+                    Book now
+                  {% else %}
+                    Enquire now
+                  {% endif %}
+                </a>
+              </div>
 
+            </div>
           </div>
         {% endif %}
       {% endfor %}
@@ -83,28 +133,81 @@
   {% endfor %}
 
   {% if hasRetreats %}
-    <h2 class="text-[color:var(--tertiary-colour)] mb-4">Retreats</h2>
-    <div class="grid gap-6">
+    <h2 class="text-[color:var(--primary-colour)] mb-6 text-3xl">Retreats</h2>
+    <div class="grid gap-8">
       {% for event in sortedEvents %}
         {% if event.data.type == "Retreat" %}
-          <div class="bg-[color:var(--tertiary-colour)] border-l-4 border-[color:var(--secondary-colour)] p-6">
-            <h3 class="font-semibold mb-2">{{ event.data.title }}</h3>
-            <p>{{ event.data.start_date | readableDate }} - {{ event.data.end_date | readableDate }}</p>
-            <p class="mb-1"><strong>Location:</strong> {{ event.data.location }}</p>
-            <p class="mb-1"><strong>Price:</strong> {{ event.data.price }}</p>
-            <p class="mt-2">{{ event.data.description }}</p>
-            
-            <div class="flex justify-between">
-              <a href="/{{ event.data.title | slugify }}/" class="underline">Find out more about {{ event.data.title }}</a>
-              <a
-                href="{{ event.data.bookingLink }}"
-                class="underline"
-                target="_blank"
-                rel="noopener noreferrer">
-                Book now
-              </a>
-            </div>
+          <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+            <div class="border-t-4 border-[color:var(--tertiary-colour)]"></div>
+            <div class="p-6 md:p-8">
+              {# Title #}
+              <h3 class="text-xl md:text-2xl font-semibold text-gray-900 m-0 mb-4 leading-tight">{{ event.data.title }}</h3>
 
+              {# Meta info grid #}
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-5 py-4 border-y border-gray-100">
+                {# Date #}
+                <div class="flex items-start gap-3">
+                  <div class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-[color:var(--primary-colour)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-xs text-gray-500 uppercase tracking-wide m-0 font-sans">When</p>
+                    <p class="text-gray-900 font-medium m-0">{{ event.data.start_date | readableDate }} - {{ event.data.end_date | readableDate }}</p>
+                  </div>
+                </div>
+
+                {# Location #}
+                <div class="flex items-start gap-3">
+                  <div class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-[color:var(--primary-colour)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-xs text-gray-500 uppercase tracking-wide m-0 font-sans">Location</p>
+                    <p class="text-gray-900 font-medium m-0">{{ event.data.location }}</p>
+                  </div>
+                </div>
+
+                {# Price #}
+                <div class="flex items-start gap-3">
+                  <div class="flex-shrink-0 w-10 h-10 rounded-full bg-teal-50 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-[color:var(--primary-colour)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-xs text-gray-500 uppercase tracking-wide m-0 font-sans">Price</p>
+                    <p class="text-gray-900 font-semibold text-lg m-0">{{ event.data.price }}</p>
+                  </div>
+                </div>
+              </div>
+
+              {# Description #}
+              <p class="text-gray-600 mb-6 leading-relaxed">{{ event.data.description }}</p>
+
+              {# Actions #}
+              <div class="flex flex-wrap gap-3">
+                <a href="/{{ event.data.title | slugify }}/" class="inline-flex items-center px-5 py-2.5 bg-[color:var(--primary-colour)] text-white font-medium rounded-lg hover:bg-[color:var(--secondary-colour)] transition-colors duration-200 no-underline">
+                  Find out more
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+                <a
+                  href="{{ event.data.bookingLink }}"
+                  class="inline-flex items-center px-5 py-2.5 border-2 border-[color:var(--primary-colour)] text-[color:var(--primary-colour)] font-medium rounded-lg hover:bg-[color:var(--primary-colour)] hover:text-white transition-colors duration-200 no-underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book now
+                </a>
+              </div>
+
+            </div>
           </div>
         {% endif %}
       {% endfor %}

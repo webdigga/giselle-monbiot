@@ -11,6 +11,7 @@ location: Kingston upon Thames
 price: SOLD OUT
 bookingLink: /contact/#contact
 showMoreDetails: true
+audienceType: "Women Only"
 tags: event
 ---
 ## **Would you love a space each week to soften into yourself, release stress, and reconnect with what really matters?**
@@ -27,7 +28,7 @@ The group is usually full, as the experience often becomes a regular part of eac
 
 Each session begins gently, with tea, conversation, and space to settle. From there, we move into grounding practices, breathwork, and somatic movement designed to ease the nervous system and deepen presence. We close with guided relaxation and, where needed, subtle healing work.
 
-<img src="/_includes/static/img/giselle-meditating.avif" alt="Giselle meditating" title="Giselle meditating" class="Right" width="600px" height="450px" loading="lazy"/>
+<img src="/_includes/static/img/giselle-meditating-card.avif" alt="Giselle meditating" title="Giselle meditating" class="Right" width="600px" height="450px" loading="lazy"/>
 
 While the experience can be deep and transformational, there’s also room for laughter, lightness, and being fully yourself. It’s not about striving or fixing – it’s about softening, releasing, and coming home to your truth.
 

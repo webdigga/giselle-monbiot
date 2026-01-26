@@ -14,6 +14,7 @@ bookingLink: https://bookme.name/gisellemonbiot/online-breathwork-sessions-for-i
 bookingLinkExternal: true
 showMoreDetails: true
 tags: event
+archived: true
 ---
 Join my online sessions to experience Conscious Connected Breathwork, bringing deep calm, clarity, and connection.
 
