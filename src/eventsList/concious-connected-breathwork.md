@@ -14,6 +14,7 @@ ticketsAvailableFrom: 2025-01-01T00:00:00.000+00:00
 bookingLink: https://bookme.name/gisellemonbiot/monthly-breathwork-circles
 bookingLinkExternal: true
 showMoreDetails: true
+audienceType: "Women Only"
 tags: event
 ---
 ## What is Conscious Connected Breathwork?

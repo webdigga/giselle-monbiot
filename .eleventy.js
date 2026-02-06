@@ -184,6 +184,15 @@ module.exports = function (eleventyConfig) {
       return dateA - dateB;
     });
 
+    // Sort recurring events: sold out events last
+    recurringEvents.sort((a, b) => {
+      const aIsSoldOut = a.data.price && a.data.price.toUpperCase().includes('SOLD OUT');
+      const bIsSoldOut = b.data.price && b.data.price.toUpperCase().includes('SOLD OUT');
+      if (aIsSoldOut && !bIsSoldOut) return 1;
+      if (!aIsSoldOut && bIsSoldOut) return -1;
+      return 0;
+    });
+
     // Return fixed-date events followed by recurring events
     return [...fixedDateEvents, ...recurringEvents];
   });

@@ -15,6 +15,7 @@ ticketsAvailableFrom: 2026-01-15T00:00:00.000+00:00
 bookingLink: https://bookme.name/gisellemonbiot/lite/coming-back-into-balance
 bookingLinkExternal: true
 showMoreDetails: true
+audienceType: "Women Only"
 tags: event
 ---
 **A warm, supportive Spring Equinox retreat to pause, breathe and come back into balance.**

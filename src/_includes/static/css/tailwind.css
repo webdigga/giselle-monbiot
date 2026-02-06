@@ -279,6 +279,21 @@ img.Right {
   }
 }
 
+/*
+  Event card accent - soft gradient top border
+*/
+.event-card-accent {
+  height: 3px;
+  background: linear-gradient(to right, transparent, var(--primary-colour) 30%, var(--primary-colour) 70%, transparent);
+  opacity: 0.4;
+}
+
+.event-card-accent--retreat {
+  height: 3px;
+  background: linear-gradient(to right, transparent, var(--tertiary-colour) 30%, var(--tertiary-colour) 70%, transparent);
+  opacity: 0.4;
+}
+
 /* Syntax Highlighting*/
 body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
