@@ -9,7 +9,7 @@ type: Retreat
 start_date: 2026-03-21T10:00:00.000+00:00
 end_date: 2026-03-21T16:30:00.000+00:00
 location: Kingston Quaker Centre, Fairfield E, Kingston upon Thames KT1 2PT
-price: £120 / Early bird £99 until 14th Feb
+price: £120 / Early bird £99 until 28th Feb
 schemaPrice: 120
 ticketsAvailableFrom: 2026-01-15T00:00:00.000+00:00
 bookingLink: https://bookme.name/gisellemonbiot/lite/coming-back-into-balance
@@ -76,7 +76,7 @@ You don't need to arrive with answers or expectations. Everything offered is inv
 * **Location:** Kingston Quaker Centre, Fairfield E, Kingston upon Thames KT1 2PT
 * **Date:** Saturday 21st March 2026 (Spring Equinox)
 * **Time:** 10.00am – 4.30pm (arrive from 9.45am)
-* **Price:** £120 (Early bird £99 until 14th February — enter "balance" in the coupon section)
+* **Price:** £120 (Early bird £99 until 28th February — enter "balance" in the coupon section)
 * Includes light refreshments
 
 **Cancellation policy:** Full refund up to 7 days before the event.

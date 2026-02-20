@@ -163,7 +163,16 @@
                   </div>
                   <div>
                     <p class="text-xs text-gray-500 uppercase tracking-wide m-0 font-sans">When</p>
-                    <p class="text-gray-900 font-medium m-0">{{ event.data.start_date | readableDate }} - {{ event.data.end_date | readableDate }}</p>
+                    {% set startDateReadable = event.data.start_date | readableDate %}
+                    {% set endDateReadable = event.data.end_date | readableDate %}
+                    {% set startTimeReadable = event.data.start_date | readableTime %}
+                    {% set endTimeReadable = event.data.end_date | readableTime %}
+                    {% if startDateReadable == endDateReadable %}
+                      <p class="text-gray-900 font-medium m-0">{{ startDateReadable }}</p>
+                      <p class="text-gray-600 text-sm m-0">{{ startTimeReadable }} - {{ endTimeReadable }}</p>
+                    {% else %}
+                      <p class="text-gray-900 font-medium m-0">{{ startDateReadable }} - {{ endDateReadable }}</p>
+                    {% endif %}
                   </div>
                 </div>
 
