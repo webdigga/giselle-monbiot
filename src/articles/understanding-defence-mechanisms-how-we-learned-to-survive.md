@@ -5,7 +5,7 @@ description: Learn what defence mechanisms are, how childhood survival strategie
 author: Giselle Monbiot
 date: 2026-03-03T10:00:00.000+00:00
 showDate: true
-cardImage: /_includes/static/img/what-is-complex-ptsd-card.avif
+cardImage: /_includes/static/img/understanding-defence-mechanisms-card.avif
 imageAlt: Understanding how childhood defence mechanisms shape adult behaviour and emotional patterns
 type: article
 tags:
@@ -35,7 +35,7 @@ It can feel confusing. Why do I keep doing this? Why can I not just stop?
 
 Because this pattern was wired in at a time when it felt linked to survival. When the nervous system associates a behaviour with staying safe, it does not let go easily.
 
-<img src="/_includes/static/img/what-is-complex-ptsd.avif" alt="Understanding how childhood defence mechanisms shape adult behaviour and emotional patterns" title="Understanding Defence Mechanisms: How We Learned to Survive" class="Centre" width="1000px" height="563px" loading="lazy"/>
+<img src="/_includes/static/img/understanding-defence-mechanisms.avif" alt="Understanding how childhood defence mechanisms shape adult behaviour and emotional patterns" title="Understanding Defence Mechanisms: How We Learned to Survive" class="Centre" width="1000px" height="563px" loading="lazy"/>
 
 ## Why We Do Not Simply Grow Out of It
 
