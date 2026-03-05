@@ -1,6 +1,6 @@
 ---
 title: Coming Back Into Balance
-subTitle: A women's equinox retreat to soften stress, restore energy and reconnect with your natural rhythm
+subTitle: A spring reset to soften stress, restore energy and reconnect with your natural rhythm
 seoTitle: Coming Back Into Balance | Giselle Monbiot
 description: A warm, supportive Spring Equinox retreat to pause, breathe and come
   back into balance. A day to soften out of winter, reconnect with yourself and
